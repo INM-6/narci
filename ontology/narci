@@ -69,7 +69,7 @@ narci:SG a foaf:Person;
    foaf:workplaceHomepage <http://www.rwth-aachen.de/> .
 
 narci:CMAP a foaf:Person;
-   foaf:name "Cyriel M.A. Pennarz";
+   foaf:name "Cyriel M.A. Pennartz";
    foaf:publications <https://scholar.google.com/citations?user=9YosOMoAAAAJ>;
    foaf:workplaceHomepage <http://www.uva.nl> .
 
