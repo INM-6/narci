@@ -23,7 +23,7 @@ to express`metadata` from a calcium imaging experiment.
 
 * Neural Activity Resource Calcium Imaging Ontology,
   M.Suezen, G.Meijer, X.Troncoso, J.S.Montijn, C.S.Lansink, 
-  A.P.Davison, M.Denker, T.Wachtler, S.Gruen, C.M.A.Pennarz (2017)
+  A.P.Davison, M.Denker, T.Wachtler, S.Gruen, C.M.A.Pennartz (2017)
   `http://www.purl.org/narci/schema#`
 
 # License
