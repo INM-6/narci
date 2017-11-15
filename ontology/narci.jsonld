@@ -1,0 +1,1963 @@
+{
+  "@context": {
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterm": "http://dublincore.org/documents/dcmi-terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "narci": "http://www.purl.org/narci/schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "narci:imaging_calcium_device",
+      "@type": [
+        "rdfs:Property",
+        "owl:DatatypeProperty"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "Grienberger-Konnerth, Neuron 73, 862-885 (2012), DOI:10.1016/j.neuron.2012.02.011",
+      "narci:relatedTo": {
+        "@id": "narci:image_acquisition_system"
+      },
+      "narci:unit": {
+        "@id": "owl:Nothing"
+      },
+      "rdfs:domain": {
+        "@id": "narci:Experiment"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "imaging_calcium_device",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     A device that provides 3D brain tissue \n                     imaging capabilities, including confocal \n                     and two-photon microscopy.\n                     "
+      }
+    },
+    {
+      "@id": "narci:perception",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdfs:Property"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "https://en.wikipedia.org/wiki/Perception, Schacter, Daniel (2011). Psychology. Worth Publishers.",
+      "narci:relatedTo": {
+        "@id": "owl:Nothing"
+      },
+      "narci:unit": {
+        "@id": "owl:Nothing"
+      },
+      "rdfs:domain": {
+        "@id": "narci:Experiment"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "perception",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     Perception (from the Latin perceptio) is the organization, \n                     identification, and interpretation of sensory information \n                     in order to represent and understand the presented \n                     information, or the environment. All perception involves \n                     signals that go through the nervous system, which in turn \n                     result from physical or chemical stimulation of the \n                     sensory system.\n                     "
+      }
+    },
+    {
+      "@id": "narci:imaging_hardware",
+      "owl:sameAs": {
+        "@id": "narci:image_acquisition_system"
+      }
+    },
+    {
+      "@id": "narci:APD",
+      "@type": "foaf:Person",
+      "foaf:name": "Andrew P. Davison",
+      "foaf:publications": {
+        "@id": "https://scholar.google.com/citations?user=a_sFeLwAAAAJ"
+      },
+      "foaf:workplaceHomepage": {
+        "@id": "http://www.uva.nl"
+      }
+    },
+    {
+      "@id": "narci:imaging_session_id",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdfs:Property"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "Pennarz Lab",
+      "narci:relatedTo": {
+        "@id": "narci:imaging_session"
+      },
+      "narci:unit": {
+        "@id": "owl:Nothing"
+      },
+      "rdfs:domain": {
+        "@id": "narci:Experiment"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "imaging_session_id",
+      "rdfs:range": {
+        "@id": "xsd:nonNegativeInteger"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     The session identification for the performed \n                     imaging experiment.\n                     "
+      }
+    },
+    {
+      "@id": "narci:PMT_gain",
+      "@type": [
+        "rdfs:Property",
+        "owl:DatatypeProperty"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": [
+        "https://en.wikipedia.org/wiki/Photomultiplier",
+        "Pennartz Lab"
+      ],
+      "narci:relatedTo": {
+        "@id": "narci:PMT"
+      },
+      "narci:unit": "dB",
+      "rdfs:domain": {
+        "@id": "narci:Scanner"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "PMT_gain",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     Electronic gain of the PMTs. \n                     "
+      },
+      "skos:note": "The string of double vector is needed. Todo vector types in rdfs range."
+    },
+    {
+      "@id": "narci:cell",
+      "@type": "rdfs:Property",
+      "rdf:domain": {
+        "@id": "narci:Metadata"
+      },
+      "rdf:range": {
+        "@id": "narci:Cell"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "cell",
+      "rdfs:type": {
+        "@id": "owl:DatatypeProperty"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     Calcium imaging imaged cell technical details.\n                     (a narci:Cell)\n                     "
+      }
+    },
+    {
+      "@id": "narci:DC_bias",
+      "owl:sameAs": {
+        "@id": "narci:PMT_offset"
+      }
+    },
+    {
+      "@id": "narci:XT",
+      "@type": "foaf:Person",
+      "foaf:name": "Xoana Troncoso",
+      "foaf:publications": {
+        "@id": "https://scholar.google.com/citations?user=OtTtYxUAAAAJ"
+      },
+      "foaf:workplaceHomepage": {
+        "@id": "http://www.cnrs.fr"
+      }
+    },
+    {
+      "@id": "narci:imaging_session_start",
+      "@type": [
+        "rdfs:Property",
+        "owl:DatatypeProperty"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "Pennartz Lab",
+      "narci:relatedTo": {
+        "@id": "narci:imaging_session"
+      },
+      "narci:unit": {
+        "@id": "owl:Nothing"
+      },
+      "rdfs:domain": {
+        "@id": "narci:Experiment"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "imaging_session_start",
+      "rdfs:range": {
+        "@id": "xsd:date"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     A wall clock time where the imaging\n                     session starts. (hh:mm:ss)\n                     "
+      }
+    },
+    {
+      "@id": "narci:imaging_system",
+      "owl:sameAs": {
+        "@id": "narci:image_acquisition_system"
+      }
+    },
+    {
+      "@id": "narci:PMT_offset",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdfs:Property"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "Pennartz Lab, https://en.wikipedia.org/wiki/DC_bias",
+      "narci:relatedTo": {
+        "@id": "narci:PMT"
+      },
+      "narci:unit": {
+        "@id": "owl:Nothing"
+      },
+      "rdfs:domain": {
+        "@id": "narci:Scanner"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "PMT_offset",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     Mean value of the waveform from PMTs.\n                     "
+      },
+      "skos:note": "The string of double vector is needed. Todo vector types in rdfs range."
+    },
+    {
+      "@id": "narci:scanner",
+      "@type": "rdfs:Property",
+      "owl:sameAs": {
+        "@id": "narci:imaging_microscopy_device"
+      },
+      "rdf:domain": {
+        "@id": "narci:Metadata"
+      },
+      "rdf:range": {
+        "@id": "narci:Scanner"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "scanner",
+      "rdfs:type": {
+        "@id": "owl:DatatypeProperty"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     Calcium imaging scanning technical details in a given\n                     experiment (a narci:Scanner).\n                     "
+      }
+    },
+    {
+      "@id": "narci:ca_target_cell_raw_trajectory",
+      "@type": [
+        "rdfs:Property",
+        "owl:DatatypeProperty"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "Pennartz Lab",
+      "narci:relatedTo": {
+        "@id": "narci:image_acquisition_system"
+      },
+      "narci:unit": "pixel",
+      "rdfs:domain": {
+        "@id": "narci:Cell"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "ca_target_cell_raw_trajectory",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     The raw fluorescence traces of the cell that is \n                     imaged for calcium dynamics (traced).\n                     "
+      }
+    },
+    {
+      "@id": "narci:laser_wavelength",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdfs:Property"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "https://en.wikipedia.org/wiki/Laser",
+      "narci:relatedTo": {
+        "@id": "narci:image_acquisition_system"
+      },
+      "narci:unit": "nm",
+      "rdfs:domain": {
+        "@id": "narci:Scanner"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "laser_wavelength",
+      "rdfs:range": {
+        "@id": "xsd:double"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     Lasers are characterized according to their wavelength in a vacuum.\n                     "
+      }
+    },
+    {
+      "@id": "narci:laser_spec",
+      "owl:sameAs": {
+        "@id": "narci:laser_excitation_device"
+      }
+    },
+    {
+      "@id": "narci:motion_correction",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdfs:Property"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "Allen Brain Observatory, Pennartz Lab",
+      "narci:relatedTo": {
+        "@id": "narci:image_acquisition_system"
+      },
+      "narci:unit": "pix",
+      "rdfs:domain": {
+        "@id": "narci:Scanner"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "motion_correction",
+      "rdfs:range": {
+        "@id": "xsd:double"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     The two-photon calcium imaging videos exhibited non-trivial \n                     frame-to-frame motion artifacts likely due to animal or \n                     brain motion. Scan line correction.\n                     "
+      }
+    },
+    {
+      "@id": "narci:ca_target_cell_count",
+      "@type": [
+        "rdfs:Property",
+        "owl:DatatypeProperty"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "Pennartz Lab",
+      "narci:relatedTo": {
+        "@id": "narci:ca_target_cell_types_all"
+      },
+      "narci:unit": {
+        "@id": "owl:Nothing"
+      },
+      "rdfs:domain": {
+        "@id": "narci:Experiment"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "ca_target_cell_types_all",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     Cell types imaged for calcium dynamics.\n                     Such as Neuron, PV for entire experiment.\n                     "
+      },
+      "skos:note": "The string of integer vector is needed. Todo vector types in rdfs range; "
+    },
+    {
+      "@id": "narci:zoom",
+      "owl:sameAs": {
+        "@id": "narci:image_microscopy_zoom"
+      }
+    },
+    {
+      "@id": "narci:phase_correction",
+      "owl:sameAs": {
+        "@id": "narci:motion_correction"
+      }
+    },
+    {
+      "@id": "narci:visual_stimuli",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdfs:Property"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "Allen Brain Observatory",
+      "narci:relatedTo": [
+        {
+          "@id": "narci:sensory_neurons"
+        },
+        {
+          "@id": "narci:stimulus"
+        }
+      ],
+      "narci:unit": {
+        "@id": "owl:Nothing"
+      },
+      "rdfs:domain": {
+        "@id": "narci:Experiment"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "visual_stimuli",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     An external light sources able to emit modulated light, \n                     that generates neuronal response.\n                     "
+      }
+    },
+    {
+      "@id": "narci:ca_target_cell_types_all",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdfs:Property"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "Pennartz Lab",
+      "narci:relatedTo": {
+        "@id": "narci:imaging_session"
+      },
+      "narci:unit": {
+        "@id": "owl:Nothing"
+      },
+      "rdfs:domain": {
+        "@id": "narci:Experiment"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "ca_target_cell_types_all",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     Cell types imaged for calcium dynamics. \n                     Such as Neuron, PV for entire experiment.\n                     "
+      },
+      "skos:note": "The string of a string vector is needed. Todo vector types in rdfs range; "
+    },
+    {
+      "@id": "narci:laser_excitation_device",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdfs:Property"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "https://en.wikipedia.org/wiki/Laser",
+      "narci:relatedTo": {
+        "@id": "narci:image_acquisition_system"
+      },
+      "narci:unit": {
+        "@id": "owl:Nothing"
+      },
+      "rdfs:domain": {
+        "@id": "narci:Scanner"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "laser_excitation_device",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     Summary of specification of a laser, a device that emits \n                     light through a process of optical amplification based on \n                     the stimulated emission of electromagnetic radiation.\n                     "
+      }
+    },
+    {
+      "@id": "narci:objective",
+      "owl:sameAs": {
+        "@id": "narci:imaging_microscopy_objective_type"
+      }
+    },
+    {
+      "@id": "narci:visual_cortex",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdfs:Property"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "https://en.wikipedia.org/wiki/Visual_cortex",
+      "narci:relatedTo": {
+        "@id": "narci:visual_stimuli"
+      },
+      "narci:unit": {
+        "@id": "owl:Nothing"
+      },
+      "rdfs:domain": {
+        "@id": "narci:Experiment"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "visual_cortex",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     An external light sources able to emit modulated light, \n                     that generates neuronal response.\n                     "
+      }
+    },
+    {
+      "@id": "narci:channel_wavelength",
+      "owl:sameAs": {
+        "@id": "narci:image_microscopy_channels"
+      }
+    },
+    {
+      "@id": "narci:anesthetics_monitor",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdfs:Property"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "Allen Brain Observatory",
+      "narci:relatedTo": {
+        "@id": "narci:anesthetics_type"
+      },
+      "narci:unit": {
+        "@id": "owl:Nothing"
+      },
+      "rdfs:domain": {
+        "@id": "narci:Experiment"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "anesthetics_monitor",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     A machine to monitor vital signs of the \n                     animal during anesthesia.\n                     "
+      }
+    },
+    {
+      "@id": "narci:unit",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdfs:Property"
+      ],
+      "rdf:domain": {
+        "@id": "narci:Properties"
+      },
+      "rdf:range": {
+        "@id": "xsd:string"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "unit",
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     A unit for a physical measurement.\n                     "
+      }
+    },
+    {
+      "@id": "narci:SG",
+      "@type": "foaf:Person",
+      "foaf:name": "Sonja Gruen",
+      "foaf:publications": {
+        "@id": "https://scholar.google.com/citations?user=b4DhWyQAAAAJ"
+      },
+      "foaf:workplaceHomepage": [
+        {
+          "@id": "http://www.fz-juelich.de"
+        },
+        {
+          "@id": "http://www.rwth-aachen.de/"
+        }
+      ]
+    },
+    {
+      "@id": "narci:DC_coefficient",
+      "owl:sameAs": {
+        "@id": "narci:PMT_offset"
+      }
+    },
+    {
+      "@id": "narci:anesthetics_type",
+      "@type": [
+        "rdfs:Property",
+        "owl:DatatypeProperty"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "Allen Brain Observatory, https://en.wikipedia.org/wiki/Anesthetic",
+      "narci:unit": {
+        "@id": "owl:Nothing"
+      },
+      "rdfs:domain": {
+        "@id": "narci:Experiment"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "anesthetics_type",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     Type of anesthesia administred during \n                     animal preperation. Such as Local,\n                     General or any other specific type.\n                     "
+      }
+    },
+    {
+      "@id": "narci:relatedTo",
+      "@type": [
+        "owl:ObjectProperty",
+        "rdfs:Property"
+      ],
+      "rdf:domain": {
+        "@id": "narci:Properties"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "relatedTo",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     Two individuals are conceptually related to\n                     each other. \n                     "
+      }
+    },
+    {
+      "@id": "narci:frame_rate",
+      "@type": [
+        "rdfs:Property",
+        "owl:DatatypeProperty"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "https://en.wikipedia.org/wiki/Frame_rate",
+      "narci:relatedTo": {
+        "@id": "narci:image_acquisition_system"
+      },
+      "narci:unit": "Hz",
+      "rdfs:domain": {
+        "@id": "narci:Scanner"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "rate",
+      "rdfs:range": {
+        "@id": "xsd:double"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     Rate that imaging hardware captures visual representation snap shots.\n                     "
+      }
+    },
+    {
+      "@id": "narci:image_microscopy_zoom",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdfs:Property"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "Pennartz Lab",
+      "narci:relatedTo": {
+        "@id": "narci:image_acquisition_system"
+      },
+      "narci:unit": {
+        "@id": "owl:Nothing"
+      },
+      "rdfs:domain": {
+        "@id": "narci:Scanner"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "image_microscopy_zoom",
+      "rdfs:range": {
+        "@id": "xsd:double"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     Ability of an optical instrument to enlarge the appearance of \n                     scanned area.\n                     "
+      }
+    },
+    {
+      "@id": "narci:ca_target_cell_size",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdfs:Property"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "Pennartz Lab",
+      "narci:relatedTo": {
+        "@id": "narci:image_acquisition_system"
+      },
+      "narci:unit": "pixel",
+      "rdfs:domain": {
+        "@id": "narci:Cell"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "ca_target_cell_size",
+      "rdfs:range": {
+        "@id": "xsd:double"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     The cell size that is imaged for calcium \n                     dynamics (traced).\n                     "
+      }
+    },
+    {
+      "@id": "narci:anesthetics_machine",
+      "@type": [
+        "rdfs:Property",
+        "owl:DatatypeProperty"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "Allen Brain Observatory, https://en.wikipedia.org/wiki/Anesthetic",
+      "narci:relatedTo": {
+        "@id": "narci:anesthetics_type"
+      },
+      "narci:unit": {
+        "@id": "owl:Nothing"
+      },
+      "rdfs:domain": {
+        "@id": "narci:Experiment"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "anesthetics_machine",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     The supporting machine or system that helps in \n                     administering anesthesia.\n                     "
+      }
+    },
+    {
+      "@id": "narci:reference",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdfs:Property"
+      ],
+      "rdf:domain": {
+        "@id": "narci:Properties"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "reference",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     A reference to concept or property definition.\n                     "
+      }
+    },
+    {
+      "@id": "narci:voxel_size",
+      "owl:sameAs": {
+        "@id": "narci:image_microscopy_voxel_size"
+      }
+    },
+    {
+      "@id": "narci:ca_image_cortical_z_stacks",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdfs:Property"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "Pennartz Lab, Allen Brain Observatory",
+      "narci:relatedTo": {
+        "@id": "narci:image_acquisition_system"
+      },
+      "narci:unit": {
+        "@id": "owl:Nothing"
+      },
+      "rdfs:domain": {
+        "@id": "narci:Scanner"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "ca_image_cortical_z_stacks",
+      "rdfs:range": {
+        "@id": "xsd:integer"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     The number of set of images acquired along cortical depth simultaneously.\n                     "
+      }
+    },
+    {
+      "@id": "narci:Experiment",
+      "@type": "rdfs:Class",
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "Experiment",
+      "rdfs:subClassOf": {
+        "@id": "narci:Metadata"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     Calcium imaging experimental details in a given \n                     session. Stimulus, recording and in-vivo \n                     biological details.\n                     "
+      }
+    },
+    {
+      "@id": "narci:imaging_session_duration",
+      "@type": [
+        "rdfs:Property",
+        "owl:DatatypeProperty"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "Pennartz Lab",
+      "narci:relatedTo": {
+        "@id": "narci:imaging_session"
+      },
+      "narci:unit": "s",
+      "rdfs:domain": {
+        "@id": "narci:Experiment"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "imaging_session_duration",
+      "rdfs:range": {
+        "@id": "xsd:double"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     The total wall clock time of the\n                     imaging session.\n                     "
+      }
+    },
+    {
+      "@id": "narci:sensory_neurons",
+      "@type": [
+        "rdfs:Property",
+        "owl:DatatypeProperty"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "https://en.wikipedia.org/wiki/Sensory_neuron",
+      "narci:relatedTo": {
+        "@id": "narci:stimulus"
+      },
+      "narci:unit": {
+        "@id": "owl:Nothing"
+      },
+      "rdfs:domain": {
+        "@id": "narci:Experiment"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "sensory_neurons",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     Sensory neurons also known as afferent neurons are neurons \n                     that convert a specific type of stimulus, via their \n                     receptors, into action potentials or graded potentials.\n                     "
+      }
+    },
+    {
+      "@id": "narci:ca_target_cell_id",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdfs:Property"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "Pennartz Lab",
+      "narci:relatedTo": {
+        "@id": "narci:image_acquisition_system"
+      },
+      "narci:unit": {
+        "@id": "owl:Nothing"
+      },
+      "rdfs:domain": {
+        "@id": "narci:Cell"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "ca_target_cell_id",
+      "rdfs:range": {
+        "@id": "xsd:integer"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     The cell identification that is imaged for calcium dynamics (traced).\n                     "
+      }
+    },
+    {
+      "@id": "narci:Properties",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdfs:Class"
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "Properties",
+      "rdfs:subClassOf": {
+        "@id": "narci:Metadata"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     Calcium imaging additional properties\n                     that can be used as a property for\n                     properties.\n                     "
+      }
+    },
+    {
+      "@id": "narci:stimulus",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdfs:Property"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "https://en.wikipedia.org/wiki/Stimulus_(physiology)",
+      "narci:relatedTo": {
+        "@id": "narci:perception"
+      },
+      "narci:unit": {
+        "@id": "owl:Nothing"
+      },
+      "rdfs:domain": {
+        "@id": "narci:Experiment"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "stimulus",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     A stimulus (plural stimuli) is a detectable change in the \n                     internal or external environment.\n                     "
+      }
+    },
+    {
+      "@id": "narci:imaging_depth",
+      "@type": [
+        "rdfs:Property",
+        "owl:DatatypeProperty"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "Pennarz Lab",
+      "narci:relatedTo": [
+        {
+          "@id": "narci:imaging_calcium_device"
+        },
+        {
+          "@id": "narci:visual_cortex"
+        }
+      ],
+      "narci:unit": "micrometer",
+      "rdfs:domain": {
+        "@id": "narci:Experiment"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "imaging_depth",
+      "rdfs:range": {
+        "@id": "xsd:nonNegativeInteger"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     Physical depth of image plane from\n                     the surface of visual cortex. \n                     "
+      }
+    },
+    {
+      "@id": "narci:ca_target_cell_y",
+      "@type": [
+        "rdfs:Property",
+        "owl:DatatypeProperty"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "Pennartz Lab",
+      "narci:relatedTo": {
+        "@id": "narci:image_acquisition_system"
+      },
+      "narci:unit": "pixel",
+      "rdfs:domain": {
+        "@id": "narci:Cell"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "ca_target_cell_y",
+      "rdfs:range": {
+        "@id": "xsd:integer"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     The cell y-coordinate on the digital image, \n                     that is imaged for calcium dynamics (traced).\n                     "
+      }
+    },
+    {
+      "@id": "narci:ca_target_cell_x",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdfs:Property"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "Pennartz Lab",
+      "narci:relatedTo": {
+        "@id": "narci:image_acquisition_system"
+      },
+      "narci:unit": "pixel",
+      "rdfs:domain": {
+        "@id": "narci:Cell"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "ca_target_cell_x",
+      "rdfs:range": {
+        "@id": "xsd:double"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     The cell x-coordinate on the digital image, \n                     that is imaged for calcium dynamics (traced).\n                     "
+      }
+    },
+    {
+      "@id": "narci:imaging_session_end",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdfs:Property"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "Pennartz Lab",
+      "narci:relatedTo": {
+        "@id": "narci:imaging_session"
+      },
+      "narci:unit": {
+        "@id": "owl:Nothing"
+      },
+      "rdfs:domain": {
+        "@id": "narci:Experiment"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "imaging_session_end",
+      "rdfs:range": {
+        "@id": "xsd:date"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     A wall clock time where the imaging  \n                     session ends. (hh:mm:ss)\n                     "
+      }
+    },
+    {
+      "@id": "narci:Scanner",
+      "@type": "rdfs:Class",
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "Scanner",
+      "rdfs:subClassOf": {
+        "@id": "narci:Metadata"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     Calcium imaging scanning technical details in a given\n                     experiment. \n                     "
+      }
+    },
+    {
+      "@id": "narci:image_acquisition_system",
+      "@type": [
+        "rdfs:Property",
+        "owl:DatatypeProperty"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "https://en.wikipedia.org/wiki/Medical_imaging",
+      "narci:relatedTo": {
+        "@id": "owl:Nothing"
+      },
+      "narci:unit": {
+        "@id": "owl:Nothing"
+      },
+      "rdfs:domain": {
+        "@id": "narci:Experiment"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "image_acquisition_system",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     A system to perform medical imaging, that is \n                     the technique and process of creating visual \n                     representations of the interior of a body for \n                     clinical analysis and medical intervention, \n                     as well as visual representation of the \n                     function of some organs or tissues \n                     (physiology).\n                     "
+      }
+    },
+    {
+      "@id": "narci:fluorescent_calcium_indicator",
+      "owl:sameAs": {
+        "@id": "narci:neuronal_calcium_sensors"
+      }
+    },
+    {
+      "@id": "narci:",
+      "@type": "owl:Ontology",
+      "dcterm:contributor": [
+        {
+          "@id": "narci:XT"
+        },
+        {
+          "@id": "narci:GTM"
+        },
+        {
+          "@id": "narci:JSM"
+        },
+        {
+          "@id": "narci:SG"
+        },
+        {
+          "@id": "narci:CMAP"
+        },
+        {
+          "@id": "narci:MD"
+        },
+        {
+          "@id": "narci:TW"
+        },
+        {
+          "@id": "narci:CSL"
+        },
+        {
+          "@id": "narci:APD"
+        }
+      ],
+      "dcterm:creator": {
+        "@id": "narci:MS"
+      },
+      "dcterm:description": {
+        "@language": "en",
+        "@value": "\n                            (c) 2017 University of Amsterdam\n                                     Forschungszentrum Juelich GmbH\n                                     The German Neuroinformatics Node (G-Node)\n                                     Le Centre National de la Recherche Scientifique (CRNS)\n\n                            narci is an ontology for calcium imaging.\n                            Developed under the auspices of \n                            European Union\n                            Human Brain Project (HBP)\n                            Work package SP 5.7.2 named NAR.\n                            NAR stands for Neural Activity Resource.\n                            narci stands for NAR Calcium Imaging.\n                 \n                         "
+      },
+      "dcterm:modified": {
+        "@type": "xsd:date",
+        "@value": "2017-10-25"
+      },
+      "dcterm:title": "narci"
+    },
+    {
+      "@id": "narci:image_microscopy_channels",
+      "@type": [
+        "rdfs:Property",
+        "owl:DatatypeProperty"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "Pennartz Lab",
+      "narci:relatedTo": {
+        "@id": "narci:image_acquisition_system"
+      },
+      "narci:unit": "nm",
+      "rdfs:domain": {
+        "@id": "narci:Scanner"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "image_microscopy_channels",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     Multispectral wavelengths.\n                     "
+      },
+      "skos:note": "The string of double vector is needed. Todo vector types in rdfs range."
+    },
+    {
+      "@id": "narci:two_photon_imaging_instrument",
+      "owl:sameAs": {
+        "@id": "narci:imaging_calcium_device"
+      }
+    },
+    {
+      "@id": "narci:wavelength",
+      "owl:sameAs": {
+        "@id": "narci:laser_wavelength"
+      }
+    },
+    {
+      "@id": "narci:laser_power",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdfs:Property"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "https://en.wikipedia.org/wiki/Laser#Examples_by_power",
+      "narci:relatedTo": {
+        "@id": "narci:image_acquisition_system"
+      },
+      "narci:unit": "mW",
+      "rdfs:domain": {
+        "@id": "narci:Scanner"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "laser_power",
+      "rdfs:range": {
+        "@id": "xsd:double"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     Summary of specification of a laser, a device that emits\n                     light through a process of optical amplification based on \n                     the stimulated emission of electromagnetic radiation.\n                     "
+      }
+    },
+    {
+      "@id": "narci:imaging_date",
+      "@type": [
+        "rdfs:Property",
+        "owl:DatatypeProperty"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": {
+        "@id": "owl:Nothing"
+      },
+      "narci:relatedTo": {
+        "@id": "owl:Nothing"
+      },
+      "narci:unit": {
+        "@id": "owl:Nothing"
+      },
+      "rdfs:domain": {
+        "@id": "narci:Experiment"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "imaging_date",
+      "rdfs:range": {
+        "@id": "xsd:date"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     A date when experiment(s) are performed \n                     formatted with yyyy-mm-dd.\n                     "
+      }
+    },
+    {
+      "@id": "narci:MD",
+      "@type": "foaf:Person",
+      "foaf:name": "Michael Denker",
+      "foaf:publications": {
+        "@id": "http://dblp.uni-trier.de/pers/hd/d/Denker:Michael"
+      },
+      "foaf:workplaceHomepage": {
+        "@id": "http://www.fz-juelich.de"
+      }
+    },
+    {
+      "@id": "narci:ca_image_resolution",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdfs:Property"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "Pennartz Lab",
+      "narci:relatedTo": {
+        "@id": "narci:image_acquisition_system"
+      },
+      "narci:unit": "pixel/frame",
+      "rdfs:domain": {
+        "@id": "narci:Scanner"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "ca_image_resolution",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     Acquired image resolution (Width x Height).\n                     "
+      },
+      "skos:note": "The string of a integer vector is needed. Todo vector types in rdfs range;"
+    },
+    {
+      "@id": "narci:PMT",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdfs:Property"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "https://en.wikipedia.org/wiki/Photomultiplier",
+      "narci:relatedTo": {
+        "@id": "narci:image_acquisition_system"
+      },
+      "narci:unit": {
+        "@id": "owl:Nothing"
+      },
+      "rdfs:domain": {
+        "@id": "narci:Scanner"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "PMT",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     Rate that imaging hardware captures visual representation snap shots.\n                     "
+      }
+    },
+    {
+      "@id": "narci:image_scanner",
+      "owl:sameAs": {
+        "@id": "narci:imaging_microscopy_device"
+      }
+    },
+    {
+      "@id": "narci:JSM",
+      "@type": "foaf:Person",
+      "foaf:name": "Jorrit S. Montijn",
+      "foaf:publications": {
+        "@id": "https://scholar.google.de/citations?user=6D9I2KcAAAAJ"
+      },
+      "foaf:workplaceHomepage": {
+        "@id": "http://www.uva.nl"
+      }
+    },
+    {
+      "@id": "narci:laser",
+      "owl:sameAs": {
+        "@id": "narci:laser_excitation_device"
+      }
+    },
+    {
+      "@id": "narci:MS",
+      "@type": "foaf:Person",
+      "foaf:name": "Mehmet Suezen",
+      "foaf:publications": {
+        "@id": "https://scholar.google.com/citations?user=cUt21NIAAAAJ"
+      },
+      "foaf:workplaceHomepage": {
+        "@id": "http://www.fz-juelich.de"
+      }
+    },
+    {
+      "@id": "narci:imaging_microscopy_objective_type",
+      "@type": [
+        "rdfs:Property",
+        "owl:DatatypeProperty"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "Allen Brain Observatory, Pennartz Lab",
+      "narci:relatedTo": {
+        "@id": "narci:image_acquisition_system"
+      },
+      "narci:unit": {
+        "@id": "owl:Nothing"
+      },
+      "rdfs:domain": {
+        "@id": "narci:Scanner"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "imaging_microscopy_objective_type",
+      "rdfs:range": {
+        "@id": "xsd:double"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     Objective to use in focusing the light on the sample\n                     and to direct fluorescence through the emission path\n                     of the system.\n                     "
+      }
+    },
+    {
+      "@id": "narci:Cell",
+      "@type": "rdfs:Class",
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "Cell",
+      "rdfs:subClassOf": {
+        "@id": "narci:Metadata"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     Calcium imaging imaged cell technical details.\n                     "
+      }
+    },
+    {
+      "@id": "narci:anesthetics_drug",
+      "@type": [
+        "rdfs:Property",
+        "owl:DatatypeProperty"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "Allen Brain Observatory",
+      "narci:relatedTo": {
+        "@id": "narci:anesthetics_type"
+      },
+      "narci:unit": {
+        "@id": "owl:Nothing"
+      },
+      "rdfs:domain": {
+        "@id": "narci:Experiment"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "anesthetics_drug",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     The name of the anaesthetic drug administered.\n                     "
+      }
+    },
+    {
+      "@id": "narci:animal_identification",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdfs:Property"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": [
+        "https://en.wikipedia.org/wiki/Animal_identification",
+        "https://en.wikipedia.org/wiki/Microchip_implant_(animal)"
+      ],
+      "narci:relatedTo": {
+        "@id": "owl:Nothing"
+      },
+      "narci:unit": {
+        "@id": "owl:Nothing"
+      },
+      "rdfs:domain": {
+        "@id": "narci:Experiment"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "animal_identification",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     Internal identification of the animal that \n                     experiment is performed on. Usually, \n                     animal identification, using a means of \n                     marking is a process done to identify and \n                     track specific animals.\n                     "
+      }
+    },
+    {
+      "@id": "narci:fluorescent_calcium_sensors",
+      "owl:sameAs": {
+        "@id": "narci:neuronal_calcium_sensors"
+      }
+    },
+    {
+      "@id": "narci:CSL",
+      "@type": "foaf:Person",
+      "foaf:name": "Carien S. Lansink",
+      "foaf:publications": {
+        "@id": "https://scholar.google.com/citations?user=9hBHfFUAAAAJ"
+      },
+      "foaf:workplaceHomepage": {
+        "@id": "http://www.uva.nl"
+      }
+    },
+    {
+      "@id": "narci:experiment",
+      "@type": "rdfs:Property",
+      "rdf:domain": {
+        "@id": "narci:Metadata"
+      },
+      "rdf:range": {
+        "@id": "narci:Experiment"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "experiment",
+      "rdfs:type": {
+        "@id": "owl:DatatypeProperty"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     Calcium imaging experimental details in a given\n                     session. Stimulus, recording and in-vivo\n                     biological details. (a narci:Experiment)\n                     "
+      }
+    },
+    {
+      "@id": "narci:ca_target_cell_type",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdfs:Property"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "Pennartz Lab",
+      "narci:relatedTo": {
+        "@id": "narci:image_acquisition_system"
+      },
+      "narci:unit": "pixel",
+      "rdfs:domain": {
+        "@id": "narci:Cell"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "ca_target_cell_type",
+      "rdfs:range": {
+        "@id": "xsd:double"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     The cell size that is imaged for calcium\n                     dynamics (traced).\n                     "
+      }
+    },
+    {
+      "@id": "narci:image_microscopy_voxel_size",
+      "@type": [
+        "rdfs:Property",
+        "owl:DatatypeProperty"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "Pennartz Lab",
+      "narci:relatedTo": {
+        "@id": "narci:image_acquisition_system"
+      },
+      "narci:unit": "um/pix",
+      "rdfs:domain": {
+        "@id": "narci:Scanner"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "image_microscopy_voxel_size",
+      "rdfs:range": {
+        "@id": "xsd:double"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     The volume element, defined in 3D space.\n                     "
+      }
+    },
+    {
+      "@id": "narci:imaging_session",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdfs:Property"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "Allen Brain Observatory",
+      "narci:relatedTo": {
+        "@id": "narci:imaging_date"
+      },
+      "narci:unit": {
+        "@id": "owl:Nothing"
+      },
+      "rdfs:domain": {
+        "@id": "narci:Experiment"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "imaging_session",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     A tag for continuous time frame where calcium \n                     imaging acquisition is performed.\n                     "
+      }
+    },
+    {
+      "@id": "narci:GTM",
+      "@type": "foaf:Person",
+      "foaf:name": "Guido T. Meijer",
+      "foaf:publications": {
+        "@id": "https://scholar.google.com/citations?user=uA8cczIAAAAJ"
+      },
+      "foaf:workplaceHomepage": {
+        "@id": "http://www.uva.nl"
+      }
+    },
+    {
+      "@id": "narci:onto",
+      "@type": [
+        "rdfs:Property",
+        "owl:DatatypeProperty"
+      ],
+      "rdf:domain": {
+        "@id": "narci:Properties"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "onto",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     Reference to other ontology on the given \n                     individual.\n                     "
+      }
+    },
+    {
+      "@id": "narci:stim_protocol",
+      "owl:sameAs": {
+        "@id": "rdfs:Property"
+      }
+    },
+    {
+      "@id": "narci:anesthetics_oxygen",
+      "@type": [
+        "rdfs:Property",
+        "owl:DatatypeProperty"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "Allen Brain Observatory",
+      "narci:relatedTo": {
+        "@id": "narci:anesthetics_type"
+      },
+      "narci:unit": "percent",
+      "rdfs:domain": {
+        "@id": "narci:Experiment"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "anesthetics_oxygen",
+      "rdfs:range": {
+        "@id": "xsd:nonNegativeInteger"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     Supplemented oxygen level during anesthesia. \n                     "
+      }
+    },
+    {
+      "@id": "narci:CMAP",
+      "@type": "foaf:Person",
+      "foaf:name": "Cyriel M.A. Pennartz",
+      "foaf:publications": {
+        "@id": "https://scholar.google.com/citations?user=9YosOMoAAAAJ"
+      },
+      "foaf:workplaceHomepage": {
+        "@id": "http://www.uva.nl"
+      }
+    },
+    {
+      "@id": "narci:neuronal_calcium_sensors",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdfs:Property"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "Allen Brain Observatory;https://en.wikipedia.org/wiki/Calcium_imaging#Chemical_indicators; Burgoyne, Nat Rev Neurosci. 2007 March ; 8(3): 182–193. doi:10.1038/nrn2093 ; Badura et. al. Neurophotonics, 1(2), 025008 (2014). doi:10.1117/1.NPh.1.2.025008, https://www.janelia.org/gcamp6-calcium-indicators-0",
+      "narci:relatedTo": [
+        {
+          "@id": "narci:visual_cortex"
+        },
+        {
+          "@id": "narci:imaging_calcium_device"
+        }
+      ],
+      "narci:unit": {
+        "@id": "owl:Nothing"
+      },
+      "rdfs:domain": {
+        "@id": "narci:Experiment"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "neuronal_calcium_sensors",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     Fluorescent molecules, usually protein, that can \n                     respond to the binding of Ca2+ ions by changing \n                     their fluorescence properties. This usually manifest \n                     as genetically encoded into transgenetic animal. \n                     Plasmids: CMV-GCaMP6s, CMV-GCaMP6m, CMV-GCaMP6f. \n                     Virusus: AAV1.Syn.GCaMP6f.WPRE.SV40, \n                     AAV1.Syn.GCaMP6s.WPRE.SV40, \n                     AAV1.Syn.GCaMP6m.WPRE.SV40, AAV5.Syn.GCaMP6m.WPRE.SV40, \n                     AAV5.Syn.GCaMP6f.WPRE.SV40, AAV5.Syn.GCaMP6s.WPRE.SV40, \n                     AAV9.Syn.GCaMP6f.WPRE.SV40, AAV9.Syn.GCaMP6m.WPRE.SV40, \n                     AAV9.Syn.GCaMP6s.WPRE.SV40, AAV1.CAG.GCaMP6s.WPRE.SV40, \n                     AAV5.CAG.GCaMP6s.WPRE.SV40, AAV9.CAG.GCaMP6s.WPRE.SV40, \n                     AAV1.CAG.Flex.GCaMP6f.WPRE.SV40, \n                     AAV1.CAG.Flex.GCaMP6m.WPRE.SV40, \n                     AAV1.CAG.Flex.GCaMP6s.WPRE.SV40, \n                     AAV1.Syn.Flex.GCaMP6f.WPRE.SV40, \n                     AAV1.Syn.Flex.GCaMP6m.WPRE.SV40, \n                     AAV1.Syn.Flex.GCaMP6s.WPRE.SV40, \n                     AAV5.CAG.Flex.GCaMP6f.WPRE.SV40, \n                     AAV5.CAG.Flex.GCaMP6m.WPRE.SV40, \n                     AAV5.CAG.Flex.GCaMP6s.WPRE.SV40, \n                     AAV5.Syn.Flex.GCaMP6f.WPRE.SV40, \n                     AAV5.Syn.Flex.GCaMP6m.WPRE.SV40, \n                     AAV5.Syn.Flex.GCaMP6s.WPRE.SV40, \n                     AAV9.CAG.Flex.GCaMP6f.WPRE.SV40, \n                     AAV9.CAG.Flex.GCaMP6m.WPRE.SV40, \n                     AAV9.CAG.Flex.GCaMP6s.WPRE.SV40, \n                     AAV9.Syn.Flex.GCaMP6f.WPRE.SV40, \n                     AAV9.Syn.Flex.GCaMP6m.WPRE.SV40, \n                     AAV9.Syn.Flex.GCaMP6s.WPRE.SV40\n                     "
+      }
+    },
+    {
+      "@id": "narci:ca_image_count",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdfs:Property"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "Pennartz Lab",
+      "narci:relatedTo": {
+        "@id": "narci:image_acquisition_system"
+      },
+      "narci:unit": {
+        "@id": "owl:Nothing"
+      },
+      "rdfs:domain": {
+        "@id": "narci:Scanner"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "ca_image_count",
+      "rdfs:range": {
+        "@id": "xsd:integer"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     Summary of specification of a laser, a device that emits\n                     light through a process of optical amplification based on\n                     the stimulated emission of electromagnetic radiation.\n                     "
+      }
+    },
+    {
+      "@id": "narci:TW",
+      "@type": "foaf:Person",
+      "foaf:name": "Thomas Wachtler",
+      "foaf:publications": {
+        "@id": "http://dblp.uni-trier.de/pers/hd/w/Wachtler:Thomas"
+      },
+      "foaf:workplaceHomepage": {
+        "@id": "http://www.lmu.de"
+      }
+    },
+    {
+      "@id": "narci:anesthetics_drug_flowrate",
+      "@type": [
+        "rdfs:Property",
+        "owl:DatatypeProperty"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "Allen Brain Observatory",
+      "narci:relatedTo": {
+        "@id": "narci:anesthetics_type"
+      },
+      "narci:unit": "ml/min",
+      "rdfs:domain": {
+        "@id": "narci:Experiment"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "anesthetics_drug_flowrate",
+      "rdfs:range": {
+        "@id": "xsd:double"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     Flow rate of the anaesthetic drug injected into \n                     animal.\n                     "
+      }
+    },
+    {
+      "@id": "narci:calcium_sensor_proteins",
+      "owl:sameAs": {
+        "@id": "narci:neuronal_calcium_sensors"
+      }
+    },
+    {
+      "@id": "narci:cortical_depth",
+      "owl:sameAs": {
+        "@id": "narci:imaging_depth"
+      }
+    },
+    {
+      "@id": "narci:Metadata",
+      "@type": "rdfs:Class",
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "Metadata",
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     Calcium imaging metadata root class.\n                     "
+      }
+    },
+    {
+      "@id": "narci:irci:referencemaging_microscopy_device",
+      "@type": [
+        "rdfs:Property",
+        "owl:DatatypeProperty"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "Pennartz Lab, https://en.wikipedia.org/wiki/Image_scanner",
+      "narci:relatedTo": {
+        "@id": "narci:image_acquisition_system"
+      },
+      "narci:unit": {
+        "@id": "owl:Nothing"
+      },
+      "rdfs:domain": {
+        "@id": "narci:Scanner"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "imaging_microscopy_device",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     Optical scanner applied to in-vivo biological area.\n                     "
+      }
+    },
+    {
+      "@id": "narci:PMT_count",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdfs:Property"
+      ],
+      "narci:onto": {
+        "@id": "owl:Nothing"
+      },
+      "narci:reference": "Pennartz Lab",
+      "narci:relatedTo": {
+        "@id": "narci:PMT"
+      },
+      "narci:unit": {
+        "@id": "owl:Nothing"
+      },
+      "rdfs:domain": {
+        "@id": "narci:Scanner"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "narci:"
+      },
+      "rdfs:label": "PMT_count",
+      "rdfs:range": {
+        "@id": "xsd:integer"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "\n                     The number of PMTs used.\n                     "
+      }
+    }
+  ]
+}
