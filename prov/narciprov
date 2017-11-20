@@ -1,2 +1,281 @@
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+#
+#  narciprov is provenance for calcium imaging.
+#  (c) 2017
+#
+#  Forschungszentrum Juelich GmbH
+#  Le Centre National de la Recherche Scientifique (CRNS)
+#
+#  Distributed under the terms of the Creative Commons 
+#  Attribution 2.0 Generic (CC BY 2.0)
+#
+
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syn tax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterm: <http://dublincore.org/documents/dcmi-terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix narciprov:  <http://www.purl.org/narci/prov#> .
+
+# Authors
+narci:MS a foaf:Person;
+   foaf:name "Mehmet Suezen";
+   foaf:publications <https://scholar.google.com/citations?user=cUt21NIAAAAJ>;
+   foaf:workplaceHomepage <http://www.fz-juelich.de> .
+
+narci:APD a foaf:Person;   
+   foaf:name "Andrew P. Davison";
+   foaf:publications <https://scholar.google.com/citations?user=a_sFeLwAAAAJ>;
+   foaf:workplaceHomepage <http://www.uva.nl> .
+
+narci:XT a foaf:Person;
+   foaf:name "Xoana Troncoso"; 
+   foaf:publications <https://scholar.google.com/citations?user=OtTtYxUAAAAJ>;
+   foaf:workplaceHomepage <http://www.cnrs.fr> .
+
+narci:GTM a foaf:Person;
+   foaf:name "Guido T. Meijer"; 
+   foaf:publications <https://scholar.google.com/citations?user=uA8cczIAAAAJ>;
+   foaf:workplaceHomepage <http://www.uva.nl> .
+
+narci:JSM a foaf:Person;
+   foaf:name "Jorrit S. Montijn";
+   foaf:publications <https://scholar.google.de/citations?user=6D9I2KcAAAAJ>;
+   foaf:workplaceHomepage <http://www.uva.nl> .
+
+narci:CSL a foaf:Person;
+   foaf:name "Carien S. Lansink";
+   foaf:publications <https://scholar.google.com/citations?user=9hBHfFUAAAAJ>;
+   foaf:workplaceHomepage <http://www.uva.nl> .
+
+narci:MD a foaf:Person;
+   foaf:name "Michael Denker";
+   foaf:publications <http://dblp.uni-trier.de/pers/hd/d/Denker:Michael>;
+   foaf:workplaceHomepage <http://www.fz-juelich.de> .
+
+narci:TW a foaf:Person;
+   foaf:name "Thomas Wachtler";
+   foaf:publications <http://dblp.uni-trier.de/pers/hd/w/Wachtler:Thomas>;
+   foaf:workplaceHomepage <http://www.lmu.de> .
+
+narci:SG a foaf:Person;
+   foaf:name "Sonja Gruen";
+   foaf:publications <https://scholar.google.com/citations?user=b4DhWyQAAAAJ>;
+   foaf:workplaceHomepage <http://www.fz-juelich.de> ;
+   foaf:workplaceHomepage <http://www.rwth-aachen.de/> .
+
+narci:CMAP a foaf:Person;
+   foaf:name "Cyriel M.A. Pennartz";
+   foaf:publications <https://scholar.google.com/citations?user=9YosOMoAAAAJ>;
+   foaf:workplaceHomepage <http://www.uva.nl> .
+
+# narciprov ontology
+<http://www.purl.org/narci/prov#> a owl:Ontology ;
+     dcterm:title "narciprov" ;
+     dcterm:modified "2017-11-20"^^<http://www.w3.org/2001/XMLSchema#date>;
+     dcterm:description """
+                            (c) 2017 Forschungszentrum Juelich GmbH
+                                     Le Centre National de la Recherche Scientifique (CRNS)
+
+                            narcirpov is a provanence ontology for calcium imaging.
+                            Developed under the auspices of 
+                            European Union
+                            Human Brain Project (HBP)
+                            Work package SP 5.7.2 named NAR.
+                            NAR stands for Neural Activity Resource.
+                            narci stands for NAR Calcium Imaging.
+                 
+                         """@en ;
+     dcterm:creator narci:MS;
+     dcterm:contributor narci:APD;
+     dcterm:contributor narci:XT . 
+     dcterm:contributor narci:GTM;
+     dcterm:contributor narci:JSM;
+     dcterm:contributor narci:CSL;
+     dcterm:contributor narci:MD;
+     dcterm:contributor narci:TW;
+     dcterm:contributor narci:SG;
+     dcterm:contributor narci:CMAP .
+
+
+#
+# narciprov prov: Classes
+#
+narciprov:Subject a rdfs:Class;
+     rdfs:isDefinedBy <http://www.purl.org/narci/prov#> ;
+     rdfs:label "Subject" ;
+     rdfs:subClassOf prov:Entity ;
+     skos:definition """
+                     An experimental subject in calcium imaging. 
+                     Usually a rodent.
+                     """@en .
+
+
+narciprov:CraniotomyProtocol a rdfs:Class;
+     rdfs:isDefinedBy <http://www.purl.org/narci/prov#> ;
+     rdfs:subClassOf prov:Entity;
+     rdfs:label "CraniotomyProtocol";
+     skos:definition """
+                     An experimental protocol for surgical operation in which 
+                     a bone flap is temporarily removed from skull to access to the brain.
+                     Usually rodents in calcium imaging context.
+                     """@en .
+
+narciprov:CraniotomyProcedure a rdfs:Class;
+     rdfs:isDefinedBy <http://www.purl.org/narci/prov#> ;
+     rdfs:subClassOf prov:Activity;
+     rdfs:label "CraniotomyProcedure";
+     skos:definition """
+                     An experimental procedure, that might use different protocol, 
+                     for surgical operation in which a bone flap is temporarily removed 
+                     from skull to access to the brain. Usually rodents in calcium 
+                     imaging context.
+                     """@en .
+
+narciprov:Craniotomy a rdfs:Class;
+     rdfs:isDefinedBy <http://www.purl.org/narci/prov#> ;
+     rdfs:subClassOf prov:Entity;
+     rdfs:label "CraniotomyProcedure";
+     skos:definition """
+                     An experimental craniotomy procedure applied.
+                     """@en .
+
+
+
+narciprov:TwoPhotonImaging a rdfs:Class;
+     rdfs:isDefinedBy <http://www.purl.org/narci/prov#> ;
+     rdfs:subClassOf prov:Activity;
+     rdfs:label "TwoPhotonImaging";
+     skos:definition """
+                     Two-photon excitation microscopy is a fluorescence 
+                     imaging technique that allows imaging of living 
+                     tissue up to about one millimeter in depth.
+                     """@en .
+
+narciprov:AnaesthesiaProtocol a rdfs:Class;
+     rdfs:isDefinedBy <http://www.purl.org/narci/prov#> ;
+     rdfs:subClassOf prov:Entity;
+     rdfs:label "AnaesthesiaProtocol";
+     skos:definition """
+                     A protocol to apply anasthetic drug for the surgery.
+                     """@en .
+
+narciprov:TwoImagingSystem  a rdfs:Class;
+     rdfs:isDefinedBy <http://www.purl.org/narci/prov#> ;
+     rdfs:subClassOf prov:Entity;
+     rdfs:label "TwoImagingSystem";
+     skos:definition """
+                     Two-photon excitation microscopy system.
+                     """@en .
+
+narciprov:VisualStimulation a rdfs:Class;
+     rdfs:isDefinedBy <http://www.purl.org/narci/prov#> ;
+     rdfs:subClassOf prov:Activity;
+     rdfs:label "VisualStimulation";
+     skos:definition """
+                     Visual stimulation details during experiment.
+                     """@en .
+
+narciprov:VisualStimulus a rdfs:Class;
+     rdfs:isDefinedBy <http://www.purl.org/narci/prov#> ;
+     rdfs:subClassOf prov:Entity;
+     rdfs:label "VisualStimulus";
+     skos:definition """
+                     Type or details of visual stimulation, 
+                     likely not be changed during experiment.
+                     """@en .
+
+narciprov:VisualStimulusPresentation a rdfs:Class;
+     rdfs:isDefinedBy <http://www.purl.org/narci/prov#> ;
+     rdfs:subClassOf prov:Entity;
+     rdfs:label "VisualStimulus";
+     skos:definition """
+                     Type or details of visual stimulation, 
+                     how it is presented. Likely not be 
+                     changed during experiment.
+                     """@en .
+
+narciprov:ImageSequence a rdfs:Class;
+     rdfs:isDefinedBy <http://www.purl.org/narci/prov#> ;
+     rdfs:subClassOf prov:Entity;
+     rdfs:label "ImageSequence";
+     skos:definition """
+                     Calcium imaging output, raw 
+                     image sequences.
+                     """@en .
+
+narciprov:RegionOfInterest a rdfs:Class;
+     rdfs:isDefinedBy <http://www.purl.org/narci/prov#>;
+     rdfs:subClassOf prov:Entity;
+     rdfs:label "RegionOfInterest";
+     skos:definition """
+                     Brain area or biological entity that
+                     is interesting for the experiment.
+                     Could be cell somata blood vessels
+                     neurophil.
+                     """@en .
+
+narciprov:RegionClassification a rdfs:Class;
+     rdfs:isDefinedBy <http://www.purl.org/narci/prov#>;
+     rdfs:subClassOf prov:Activity;
+     rdfs:label "RegionClassification";
+     skos:definition """
+                     A classification from ROI. 
+                     """@en .
+
+narciprov:CellFromRegionOfInterest a rdfs:Class;
+     rdfs:isDefinedBy <http://www.purl.org/narci/prov#> ;
+     rdfs:subClassOf prov:Entity;
+     rdfs:label "CellFromRegionOfInterest";
+     skos:definition """
+                     Cell types interesting for the experiment
+                     from ROI.
+                     """@en .
+
+narciprov:TimeSeriesExtract a rdfs:Class;
+     rdfs:isDefinedBy <http://www.purl.org/narci/prov#> ;
+     rdfs:subClassOf prov:Activity;
+     rdfs:label "TimeSeriesExtract";
+     skos:definition """
+                     Extracting image sequences.
+                     """@en .
+
+narciprov:FluorescenceActivity a rdfs:Class;
+     rdfs:isDefinedBy <http://www.purl.org/narci/prov#> ;
+     rdfs:subClassOf prov:Entity;
+     rdfs:label "FluorescenceActivity";
+     skos:definition """
+                     Fluorescence Activity trace from 
+                     time series. 
+                     """@en .
+
+narciprov:CraniotomyProcedure prov:used narciprov:Subject .
+
+narciprov:CraniotomyProcedure prov:used narciprov:CraniotomyProtocol .
+
+narciprov:Craniotomy prov:wasGeneratedBy CraniotomyProcedure .
+
+narciprov:TwoPhotonImaging prov:used narciprov:Craniotomy .
+
+narciprov:TwoPhotonImaging prov:used narciprov:TwoImagingSystem .
+
+narciprov:TwoPhotonImaging prov:used narciprov:AnaesthesiaProtocol .
+
+narciprov:VisualStimulation prov:wasInformedBy narciprov:TwoPhotonImaging .
+
+narciprov:VisualStimulation prov:used narciprov:VisualStimulus .
+
+narciprov:ImageSequence prov:wasGeneratedBy narciprov:TwoPhotonImaging .
+
+narciprov:RegionOfInterest prov:wasDerivedFrom narciprov:ImageSequence .
+
+narciprov:RegionClassification prov:used narciprov:RegionOfInterest .
+
+narciprov:CellFromRegionOfInterest prov:wasGeneratedBy narciprov:RegionClassification .
+
+narciprov:TimeSeriesExtract prov:used narciprov:CellFromRegionOfInterest .
+
+narciprov:FluorescenceActivity prov:wasGeneratedBy narciprov:TimeSeriesExtract .
