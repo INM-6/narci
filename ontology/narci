@@ -50,7 +50,7 @@ narci:CSL a foaf:Person;
 narci:APD a foaf:Person;   
    foaf:name "Andrew P. Davison";
    foaf:publications <https://scholar.google.com/citations?user=a_sFeLwAAAAJ>;
-   foaf:workplaceHomepage <http://www.uva.nl> .
+   foaf:workplaceHomepage <http://www.cnrs.fr> .
 
 narci:MD a foaf:Person;
    foaf:name "Michael Denker";
