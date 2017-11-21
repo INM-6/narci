@@ -256,7 +256,7 @@ narciprov:CraniotomyProcedure prov:used narciprov:Subject .
 
 narciprov:CraniotomyProcedure prov:used narciprov:CraniotomyProtocol .
 
-narciprov:Craniotomy prov:wasGeneratedBy CraniotomyProcedure .
+narciprov:Craniotomy prov:wasGeneratedBy narciprov:CraniotomyProcedure .
 
 narciprov:TwoPhotonImaging prov:used narciprov:Craniotomy .
 
@@ -267,6 +267,8 @@ narciprov:TwoPhotonImaging prov:used narciprov:AnaesthesiaProtocol .
 narciprov:VisualStimulation prov:wasInformedBy narciprov:TwoPhotonImaging .
 
 narciprov:VisualStimulation prov:used narciprov:VisualStimulus .
+
+narciprov:VisualStimulation prov:used narciprov:VisualStimulusPresentation .
 
 narciprov:ImageSequence prov:wasGeneratedBy narciprov:TwoPhotonImaging .
 
