@@ -38,6 +38,9 @@ to express`metadata` from a calcium imaging experiment.
 
         
 ```
+# Mailing list
+
+There is a group/mailing list for `narci` called `narci:Calcium Imaging Ontology`, Group: [narci-ontology](https://groups.google.com/forum/#!forum/narci-ontology).
 
 # References
 
