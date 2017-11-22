@@ -8,7 +8,7 @@
 #  Le Centre National de la Recherche Scientifique (CRNS)
 #
 #  Distributed under the terms of the Creative Commons 
-#  Attribution 2.0 Generic (CC BY 2.0)
+#  Attribution 4.0 Generic (CC BY 4.0)
 #
 
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
