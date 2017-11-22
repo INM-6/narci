@@ -997,21 +997,6 @@ narci:ca_target_cell_type a rdfs:Property;
                      dynamics (traced).
                      """@en .
 
-narci:ca_target_cell_type a rdfs:Property;
-     rdfs:isDefinedBy <http://www.purl.org/narci/schema#>;
-     rdfs:label "ca_target_cell_type";
-     rdfs:domain narci:Cell;
-     rdfs:range xsd:double;
-     rdf:type owl:DatatypeProperty;
-     narci:reference "Pennartz Lab";
-     narci:unit "pixel";
-     narci:onto owl:Nothing;
-     narci:relatedTo narci:image_acquisition_system;
-     skos:definition """
-                     The cell size that is imaged for calcium
-                     dynamics (traced).
-                     """@en .
-
 narci:ca_target_cell_raw_trajectory a rdfs:Property;
      rdfs:isDefinedBy <http://www.purl.org/narci/schema#>;
      rdfs:label "ca_target_cell_raw_trajectory";
