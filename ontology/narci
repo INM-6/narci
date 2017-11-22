@@ -956,7 +956,7 @@ narci:ca_target_cell_y a rdfs:Property;
      rdfs:isDefinedBy <http://www.purl.org/narci/schema#>;
      rdfs:label "ca_target_cell_y";
      rdfs:domain narci:Cell;
-     rdfs:range xsd:integer;
+     rdfs:range xsd:double;
      rdf:type owl:DatatypeProperty;
      narci:reference "Pennartz Lab";
      narci:unit "pixel";
