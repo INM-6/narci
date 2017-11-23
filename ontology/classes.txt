@@ -1,0 +1,17 @@
+narci:Subject,prov:Entity
+narci:CraniotomyProtocol,prov:Entity
+narci:CraniotomyProcedure,prov:Activity
+narci:Craniotomy,prov:Activity
+narci:AnaesthesiaProtocol,prov:Entity
+narci:TwoPhotonImaging,prov:Activity
+narci:TwoImagingSystem,prov:Entity
+narci:VisualStimulation,prov:Activity
+narci:VisualStimulus,prov:Entity
+narci:VisualStimulusPresentation,prov:Entity
+narci:ImageSequence,prov:Entity
+narci:RegionOfInterest,prov:Entity
+narci:RegionClassification,prov:Activity
+narci:CellFromRegionOfInterest,prov:Activity
+narci:TimeSeriesExtract,prov:Activity
+narci:FluorescenceActivity,prov:Entity
+narci:Properties,prov:Entity
