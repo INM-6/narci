@@ -117,13 +117,24 @@ narci:Metadata a rdfs:Class;
 
 narci:Subject a rdfs:Class;
      rdfs:isDefinedBy <http://www.purl.org/narci/schema#>;
-     rdfs:label "Subject" ;
+     rdfs:label "Subject";
      rdfs:subClassOf prov:Entity;
      rdfs:subClassOf narci:Metadata;
      skos:definition """
                      An experimental subject in calcium imaging. 
                      Usually a rodent.
                      """@en .
+
+narci:subject a rdfs:Property;
+     rdfs:isDefinedBy <http://www.purl.org/narci/schema#>;
+     rdfs:label "subject";
+     rdfs:range narci:Metadata;
+     rdf:domain narci:Subject;
+     rdf:type owl:DatatypeProperty;
+     skos:definition """
+                     Instance of narci:Subject.
+                     """@en .
+
 
 narci:CraniotomyProtocol a rdfs:Class;
      rdfs:isDefinedBy <http://www.purl.org/narci/schema#>;
@@ -134,6 +145,16 @@ narci:CraniotomyProtocol a rdfs:Class;
                      An experimental protocol for surgical operation in which 
                      a bone flap is temporarily removed from skull to access to the brain.
                      Usually rodents in calcium imaging context.
+                     """@en .
+
+narci:craniotomyProtocol a rdfs:Property;
+     rdfs:isDefinedBy <http://www.purl.org/narci/schema#>;
+     rdfs:label "craniotomyProtocol";
+     rdfs:range narci:Metadata;
+     rdf:domain narci:CraniotomyProtocol;
+     rdf:type owl:DatatypeProperty;
+     skos:definition """
+                     Instance of narci:CraniotomyProtocol.
                      """@en .
 
 narci:CraniotomyProcedure a rdfs:Class;
@@ -148,6 +169,16 @@ narci:CraniotomyProcedure a rdfs:Class;
                      imaging context.
                      """@en .
 
+narci:craniotomyProcedure a rdfs:Property;
+     rdfs:isDefinedBy <http://www.purl.org/narci/schema#>;
+     rdfs:label "narci:craniotomyProcedure";
+     rdfs:range narci:Metadata;
+     rdf:domain narci:CraniotomyProcedure;
+     rdf:type owl:DatatypeProperty;
+     skos:definition """
+                     Instance of narci:CraniotomyProcedure.
+                     """@en .
+
 narci:Craniotomy a rdfs:Class;
      rdfs:isDefinedBy <http://www.purl.org/narci/schema#> ;
      rdfs:subClassOf prov:Entity;
@@ -155,6 +186,16 @@ narci:Craniotomy a rdfs:Class;
      rdfs:label "Craniotomy";
      skos:definition """
                      An experimental craniotomy procedure applied.
+                     """@en .
+
+narci:craniotomy a rdfs:Property;
+     rdfs:isDefinedBy <http://www.purl.org/narci/schema#>;
+     rdfs:label "narci:craniotomy";
+     rdfs:range narci:Metadata;
+     rdf:domain narci:Craniotomy;
+     rdf:type owl:DatatypeProperty;
+     skos:definition """
+                     Instance of narci:Craniotomy .
                      """@en .
 
 
@@ -169,6 +210,16 @@ narci:TwoPhotonImaging a rdfs:Class;
                      tissue up to about one millimeter in depth.
                      """@en .
 
+narci:twoPhotonImaging  a rdfs:Property;
+     rdfs:isDefinedBy <http://www.purl.org/narci/schema#>;
+     rdfs:label "twoPhotonImaging";
+     rdfs:range narci:Metadata;
+     rdf:domain narci:TwoPhotonImaging;
+     rdf:type owl:DatatypeProperty;
+     skos:definition """
+                     Instance of narci:TwoPhotonImaging.
+                     """@en .
+
 narci:AnaesthesiaProtocol a rdfs:Class;
      rdfs:isDefinedBy <http://www.purl.org/narci/schema#> ;
      rdfs:subClassOf prov:Entity;
@@ -176,6 +227,16 @@ narci:AnaesthesiaProtocol a rdfs:Class;
      rdfs:label "AnaesthesiaProtocol";
      skos:definition """
                      A protocol to apply anasthetic drug for the surgery.
+                     """@en .
+
+narci:anaesthesiaProtocol a rdfs:Property;
+     rdfs:isDefinedBy <http://www.purl.org/narci/schema#>;
+     rdfs:label "anaesthesiaProtocol";
+     rdfs:range narci:Metadata;
+     rdf:domain narci:AnaesthesiaProtocol;
+     rdf:type owl:DatatypeProperty;
+     skos:definition """
+                     Instance of narci:AnaesthesiaProtocol.
                      """@en .
 
 narci:TwoImagingSystem a rdfs:Class;
@@ -187,6 +248,16 @@ narci:TwoImagingSystem a rdfs:Class;
                      Two-photon excitation microscopy system.
                      """@en .
 
+narci:twoImagingSystem a rdfs:Property;
+     rdfs:isDefinedBy <http://www.purl.org/narci/schema#>;
+     rdfs:label "twoImagingSystem";
+     rdfs:range narci:Metadata;
+     rdf:domain narci:TwoImagingSystem;
+     rdf:type owl:DatatypeProperty;
+     skos:definition """
+                     Instance of narci:TwoImagingSystem.
+                     """@en .
+
 narci:VisualStimulation a rdfs:Class;
      rdfs:isDefinedBy <http://www.purl.org/narci/schema#> ;
      rdfs:subClassOf prov:Activity;
@@ -194,6 +265,16 @@ narci:VisualStimulation a rdfs:Class;
      rdfs:label "VisualStimulation";
      skos:definition """
                      Visual stimulation details during experiment.
+                     """@en .
+
+narci:visualStimulation a rdfs:Property;
+     rdfs:isDefinedBy <http://www.purl.org/narci/schema#>;
+     rdfs:label "visualStimulation";
+     rdfs:range narci:Metadata;
+     rdf:domain narci:VisualStimulation;
+     rdf:type owl:DatatypeProperty;
+     skos:definition """
+                     Instance of narci:VisualStimulation.
                      """@en .
 
 narci:VisualStimulus a rdfs:Class;
@@ -204,6 +285,16 @@ narci:VisualStimulus a rdfs:Class;
      skos:definition """
                      Type or details of visual stimulation, 
                      likely not be changed during experiment.
+                     """@en .
+
+narci:visualStimulus a rdfs:Property;
+     rdfs:isDefinedBy <http://www.purl.org/narci/schema#>;
+     rdfs:label "visualStimulus";
+     rdfs:range narci:Metadata;
+     rdf:domain narci:VisualStimulus;
+     rdf:type owl:DatatypeProperty;
+     skos:definition """
+                     Instance of narci:VisualStimulus.
                      """@en .
 
 narci:VisualStimulusPresentation a rdfs:Class;
@@ -217,6 +308,16 @@ narci:VisualStimulusPresentation a rdfs:Class;
                      changed during experiment.
                      """@en .
 
+narci:visualStimulusPresentation a rdfs:Property;
+     rdfs:isDefinedBy <http://www.purl.org/narci/schema#>;
+     rdfs:label "visualStimulusPresentation";
+     rdfs:range narci:Metadata;
+     rdf:domain narci:VisualStimulusPresentation;
+     rdf:type owl:DatatypeProperty;
+     skos:definition """
+                     Instance of narci:VisualStimulusPresentation.
+                     """@en .
+
 narci:ImageSequence a rdfs:Class;
      rdfs:isDefinedBy <http://www.purl.org/narci/schema#> ;
      rdfs:subClassOf prov:Entity;
@@ -225,6 +326,16 @@ narci:ImageSequence a rdfs:Class;
      skos:definition """
                      Calcium imaging output, raw 
                      image sequences.
+                     """@en .
+
+narci:imageSequence a rdfs:Property;
+     rdfs:isDefinedBy <http://www.purl.org/narci/schema#>;
+     rdfs:label "imageSequence";
+     rdfs:range narci:Metadata;
+     rdf:domain narci:ImageSequence;
+     rdf:type owl:DatatypeProperty;
+     skos:definition """
+                     Instance of narci:ImageSequence
                      """@en .
 
 narci:RegionOfInterest a rdfs:Class;
@@ -239,6 +350,16 @@ narci:RegionOfInterest a rdfs:Class;
                      neurophil.
                      """@en .
 
+narci:regionOfInterest a rdfs:Property;
+     rdfs:isDefinedBy <http://www.purl.org/narci/schema#>;
+     rdfs:label "regionOfInterest";
+     rdfs:range narci:Metadata;
+     rdf:domain narci:RegionOfInterest;
+     rdf:type owl:DatatypeProperty;
+     skos:definition """
+                     Instance of narci:RegionOfInterest.
+                     """@en .
+
 narci:RegionClassification a rdfs:Class;
      rdfs:isDefinedBy <http://www.purl.org/narci/schema#>;
      rdfs:subClassOf prov:Activity;
@@ -246,6 +367,16 @@ narci:RegionClassification a rdfs:Class;
      rdfs:label "RegionClassification";
      skos:definition """
                      A classification from ROI. 
+                     """@en .
+
+narci:regionClassification a rdfs:Property;
+     rdfs:isDefinedBy <http://www.purl.org/narci/schema#>;
+     rdfs:label "regionClassification";
+     rdfs:range narci:Metadata;
+     rdf:domain narci:RegionClassification;
+     rdf:type owl:DatatypeProperty;
+     skos:definition """
+                     Instance of narci:RegionClassification.
                      """@en .
 
 narci:CellFromRegionOfInterest a rdfs:Class;
@@ -258,6 +389,16 @@ narci:CellFromRegionOfInterest a rdfs:Class;
                      from ROI.
                      """@en .
 
+narci:cellFromRegionOfInterest a rdfs:Property;
+     rdfs:isDefinedBy <http://www.purl.org/narci/schema#>;
+     rdfs:label "cellFromRegionOfInterest";
+     rdfs:range narci:Metadata;
+     rdf:domain narci:CellFromRegionOfInterest;
+     rdf:type owl:DatatypeProperty;
+     skos:definition """
+                     Instance of narci:CellFromRegionOfInterest.
+                     """@en .
+
 narci:TimeSeriesExtract a rdfs:Class;
      rdfs:isDefinedBy <http://www.purl.org/narci/schema#> ;
      rdfs:subClassOf prov:Activity;
@@ -265,6 +406,16 @@ narci:TimeSeriesExtract a rdfs:Class;
      rdfs:label "TimeSeriesExtract";
      skos:definition """
                      Extracting image sequences.
+                     """@en .
+
+narci:timeSeriesExtract a rdfs:Property;
+     rdfs:isDefinedBy <http://www.purl.org/narci/schema#>;
+     rdfs:label "timeSeriesExtract";
+     rdfs:range narci:Metadata;
+     rdf:domain narci:TimeSeriesExtract;
+     rdf:type owl:DatatypeProperty;
+     skos:definition """
+                     Instance of narci:TimeSeriesExtract
                      """@en .
 
 narci:FluorescenceActivity a rdfs:Class;
@@ -275,6 +426,16 @@ narci:FluorescenceActivity a rdfs:Class;
      skos:definition """
                      Fluorescence Activity trace from 
                      time series. 
+                     """@en .
+
+narci:fluorescenceActivity a rdfs:Property;
+     rdfs:isDefinedBy <http://www.purl.org/narci/schema#>;
+     rdfs:label "fluorescenceActivity";
+     rdfs:range narci:Metadata;
+     rdf:domain narci:FluorescenceActivity;
+     rdf:type owl:DatatypeProperty;
+     skos:definition """
+                     Instance of narci:FluorescenceActivity.
                      """@en .
 
 
@@ -289,6 +450,7 @@ narci:Properties a rdfs:Class;
                      that can be used as a property for
                      properties.
                      """@en .
+
 #
 # narci:Properties, prov:Entity
 #
