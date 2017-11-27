@@ -138,7 +138,7 @@ narciprov:CraniotomyProcedure a rdfs:Class;
 narciprov:Craniotomy a rdfs:Class;
      rdfs:isDefinedBy <http://www.purl.org/narci/prov#> ;
      rdfs:subClassOf prov:Entity;
-     rdfs:label "CraniotomyProcedure";
+     rdfs:label "Craniotomy";
      skos:definition """
                      An experimental craniotomy procedure applied.
                      """@en .
@@ -191,7 +191,7 @@ narciprov:VisualStimulus a rdfs:Class;
 narciprov:VisualStimulusPresentation a rdfs:Class;
      rdfs:isDefinedBy <http://www.purl.org/narci/prov#> ;
      rdfs:subClassOf prov:Entity;
-     rdfs:label "VisualStimulus";
+     rdfs:label "VisualStimulusPresentation";
      skos:definition """
                      Type or details of visual stimulation, 
                      how it is presented. Likely not be 
