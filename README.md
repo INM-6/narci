@@ -12,12 +12,21 @@ experiments based on the work
 This is an RDF schema using OWL languge and should be used 
 to express`metadata` from a calcium imaging experiment.
 
-# Usage
+# Programmatic Usage
 
-* Persistent URL for the ontology is as follows
-`http://www.purl.org/narci/schema`
 * For short tutorial on how to use the ontology programmatically
   via `rdflib` see python notebook under `tutorial`.
+
+## Ontology release management
+
+Versions of the persistent URL of the ontology should be used in production.
+
+Note that once it is released, schema version move to `dev` of next release
+number, first minor in the repository.
+The following versions are functional and matching released versions.
+
+## Ontology versions in production
+* `http://www.purl.org/narci/v0.2.1/schema`
 
 # How to cite
 
