@@ -19,14 +19,18 @@ to express`metadata` from a calcium imaging experiment.
 
 ## Ontology release management
 
-Versions of the persistent URL of the ontology should be used in production.
-
+Versions of the persistent URL of the ontology, `narci` should be used in production.
 Note that once it is released, schema version move to `dev` of next release
-number, first minor in the repository.
-The following versions are functional and matching released versions.
+number, first minor in the repository, for development purpose. The schema 
+persistent URLs versioning are matching with the released released version.
+Documentation and tutorial for each version can be found in the released versions,
+either by tagged version or released files.
 
-## Ontology versions in production
-* `http://www.purl.org/narci/v0.2.1/schema`
+## Ontology current development URL
+* `http://www.purl.org/narci/v0.3dev/schema` 
+
+## Ontology in production URLs
+* `http://www.purl.org/narci/v0.2.1/schema` 
 
 # How to cite
 
