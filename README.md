@@ -30,14 +30,17 @@ either by tagged version or released files.
 * `http://www.purl.org/narci/v0.3dev/schema` 
 
 ## Ontology in production URLs
-* `http://www.purl.org/narci/v0.2.1/schema` 
+* `http://www.purl.org/narci/v0.2.1/schema`  
+   [tutorial](https://github.com/INM-6/narci/blob/v0.2.1/tutorial/narci_tutorial.ipynb) |
+   [full graph](https://github.com/INM-6/narci/blob/v0.2.1/ontology/narci.svg) |
+   [prov graph](https://github.com/INM-6/narci/blob/v0.2.1/prov/narciprov.svg)
 
 # How to cite
 
 * Neural Activity Resource Calcium Imaging Ontology,
   M.Suezen, G.Meijer, X.Troncoso, J.S.Montijn, C.S.Lansink, 
   A.P.Davison, M.Denker, T.Wachtler, S.Gruen, C.M.A.Pennartz (2017)
-  `http://www.purl.org/narci/schema#`
+  `http://www.purl.org/narci/v0.2.1/schema`
 
 # License
 
