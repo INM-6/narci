@@ -17,14 +17,15 @@ to express`metadata` from a calcium imaging experiment.
 * For short tutorial on how to use the ontology programmatically
   via `rdflib` see python notebook under `tutorial`.
 
-## Ontology release management
+## narci release management
 
-Versions of the persistent URL of the ontology, `narci` should be used in production.
+The versions of the persistent URL of the ontology, `narci` should be used in production.
 Note that once it is released, schema version move to `dev` of next release
 number, first minor in the repository, for development purpose. The schema 
-persistent URLs versioning are matching with the released released version.
+persistent URLs versioning should match with the released version.
 Documentation and tutorial for each version can be found in the released versions,
-either by tagged version or released files.
+tagged versions or in released files, these should be linked in the below list
+of production URLs.
 
 ## Ontology current development URL
 * `http://www.purl.org/narci/v0.3dev/schema` 
@@ -34,6 +35,15 @@ either by tagged version or released files.
    [tutorial](https://github.com/INM-6/narci/blob/v0.2.1/tutorial/narci_tutorial.ipynb) |
    [full graph](https://github.com/INM-6/narci/blob/v0.2.1/ontology/narci.svg) |
    [prov graph](https://github.com/INM-6/narci/blob/v0.2.1/prov/narciprov.svg)
+
+## Release procedure
+
+* Continue using dev version (URL) pointing to master branch.
+* Once it is released, if not yet updated, update tutorials README.md with the 
+  new version and create a persistent URL with the correct version pointing 
+  to corresponding tag, release version. 
+* Remove previous dev version persistent URL to avoid unreachble links.
+  There should be only single development persistent URL at a time.
 
 # How to cite
 
