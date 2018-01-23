@@ -45,7 +45,7 @@ Development is performed on `ontology/narci` file in Turtle syntax.
 * Once it is released, if not yet updated, update tutorials README.md with the 
   new version and create a persistent URL with the correct version pointing 
   to corresponding tag, release version. 
-* Remove previous dev version persistent URL to avoid unreachble links.
+* Remove previous dev version persistent URL to avoid unreachable links.
   There should be only single development persistent URL at a time.
 
 ## Versions
@@ -53,6 +53,12 @@ Development is performed on `ontology/narci` file in Turtle syntax.
 `versions` directory contains all production releases prior to dev version. 
 It contains turtle syntax file in `.tll` extension and auto-converted HBP 
 compatible JSON-LD format with `.json` extension.
+
+## Resources used
+
+We have listed resources, including peer-review papers used in developing this 
+schema ontology: [RESOURCE.md](RESOURCE.md). Please update this document 
+for any additional resource.
 
 # How to cite
 
