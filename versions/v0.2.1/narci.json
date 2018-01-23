@@ -1,0 +1,4171 @@
+{
+    "@context": {
+        "isDefinedBy": {
+            "@id": "rdfs:isDefinedBy",
+            "@type": "@id"
+        },
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "shapes": {
+            "@reverse": "rdfs:isDefinedBy",
+            "@type": "@id"
+        }
+    },
+    "@type": "owl:Ontology",
+    "shapes": [
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#imaging_session_end",
+            "@type": [
+                "http://www.w3.org/2002/07/owl#DatatypeProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Property"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "Pennartz Lab"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#imaging_session"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#TwoPhotonImaging"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "imaging_session_end"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#date"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     A wall clock time where the imaging  \n                     session ends. (hh:mm:ss)\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#APD",
+            "@type": [
+                "http://xmlns.com/foaf/0.1/Person"
+            ],
+            "http://xmlns.com/foaf/0.1/name": [
+                {
+                    "@value": "Andrew P. Davison"
+                }
+            ],
+            "http://xmlns.com/foaf/0.1/publications": [
+                {
+                    "@id": "https://scholar.google.com/citations?user=a_sFeLwAAAAJ"
+                }
+            ],
+            "http://xmlns.com/foaf/0.1/workplaceHomepage": [
+                {
+                    "@id": "http://www.cnrs.fr"
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#laser_excitation_device",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Property",
+                "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "https://en.wikipedia.org/wiki/Laser"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#image_acquisition_system"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#TwoImagingSystem"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "laser_excitation_device"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#string"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Summary of specification of a laser, a device that emits \n                     light through a process of optical amplification based on \n                     the stimulated emission of electromagnetic radiation.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#image_scanner",
+            "http://www.w3.org/2002/07/owl#sameAs": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#imaging_microscopy_device"
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#imaging_session_duration",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Property",
+                "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "Pennartz Lab"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#imaging_session"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@value": "s"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#TwoPhotonImaging"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "imaging_session_duration"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     The total wall clock time of the\n                     imaging session.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#stimulus",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Property",
+                "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "https://en.wikipedia.org/wiki/Stimulus_(physiology)"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#perception"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#VisualStimulusPresentation"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "stimulus"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#string"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     A stimulus (plural stimuli) is a detectable change in the \n                     internal or external environment.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#Metadata",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "Metadata"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Calcium imaging metadata root class.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#timeSeriesExtract",
+            "@type": [
+                "http://www.w3.org/2002/07/owl#DatatypeProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Property"
+            ],
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#TimeSeriesExtract"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "timeSeriesExtract"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#Metadata"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Instance of narci:TimeSeriesExtract\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#calcium_sensor_proteins",
+            "http://www.w3.org/2002/07/owl#sameAs": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#neuronal_calcium_sensors"
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#visualStimulusPresentation",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Property",
+                "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            ],
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#VisualStimulusPresentation"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "visualStimulusPresentation"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#Metadata"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Instance of narci:VisualStimulusPresentation.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#Craniotomy",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "Craniotomy"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#Metadata"
+                },
+                {
+                    "@id": "http://www.w3.org/ns/prov#Entity"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     An experimental craniotomy procedure applied.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#cortical_depth",
+            "http://www.w3.org/2002/07/owl#sameAs": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#imaging_depth"
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#MS",
+            "@type": [
+                "http://xmlns.com/foaf/0.1/Person"
+            ],
+            "http://xmlns.com/foaf/0.1/name": [
+                {
+                    "@value": "Mehmet Suezen"
+                }
+            ],
+            "http://xmlns.com/foaf/0.1/publications": [
+                {
+                    "@id": "https://scholar.google.com/citations?user=cUt21NIAAAAJ"
+                }
+            ],
+            "http://xmlns.com/foaf/0.1/workplaceHomepage": [
+                {
+                    "@id": "http://www.fz-juelich.de"
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#wavelength",
+            "http://www.w3.org/2002/07/owl#sameAs": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#laser_wavelength"
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#image_acquisition_system",
+            "@type": [
+                "http://www.w3.org/2002/07/owl#DatatypeProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Property"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "https://en.wikipedia.org/wiki/Medical_imaging"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#TwoImagingSystem"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "image_acquisition_system"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#string"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     A system to perform medical imaging, that is \n                     the technique and process of creating visual \n                     representations of the interior of a body for \n                     clinical analysis and medical intervention, \n                     as well as visual representation of the \n                     function of some organs or tissues \n                     (physiology).\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#objective",
+            "http://www.w3.org/2002/07/owl#sameAs": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#imaging_microscopy_objective_type"
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#imaging_session",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Property",
+                "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "Allen Brain Observatory"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#imaging_date"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#TwoPhotonImaging"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "imaging_session"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#string"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     A tag for continuous time frame where calcium \n                     imaging acquisition is performed.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#GTM",
+            "@type": [
+                "http://xmlns.com/foaf/0.1/Person"
+            ],
+            "http://xmlns.com/foaf/0.1/name": [
+                {
+                    "@value": "Guido T. Meijer"
+                }
+            ],
+            "http://xmlns.com/foaf/0.1/publications": [
+                {
+                    "@id": "https://scholar.google.com/citations?user=uA8cczIAAAAJ"
+                }
+            ],
+            "http://xmlns.com/foaf/0.1/workplaceHomepage": [
+                {
+                    "@id": "http://www.uva.nl"
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#anesthetics_type",
+            "@type": [
+                "http://www.w3.org/2002/07/owl#DatatypeProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Property"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "Allen Brain Observatory, https://en.wikipedia.org/wiki/Anesthetic"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#AnaesthesiaProtocol"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "anesthetics_type"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#string"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Type of anesthesia administred during \n                     animal preperation. Such as Local,\n                     General or any other specific type.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#",
+            "@type": [
+                "http://www.w3.org/2002/07/owl#Ontology"
+            ],
+            "http://dublincore.org/documents/dcmi-terms/contributor": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#MD"
+                },
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#CSL"
+                },
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#SG"
+                },
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#XT"
+                },
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#GTM"
+                },
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#JSM"
+                },
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#TW"
+                },
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#APD"
+                },
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#CMAP"
+                }
+            ],
+            "http://dublincore.org/documents/dcmi-terms/creator": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#MS"
+                }
+            ],
+            "http://dublincore.org/documents/dcmi-terms/description": [
+                {
+                    "@language": "en",
+                    "@value": "\n                            (c) 2017 University of Amsterdam\n                                     Forschungszentrum Juelich GmbH\n                                     The German Neuroinformatics Node (G-Node)\n                                     Le Centre National de la Recherche Scientifique (CRNS)\n\n                            narci is an ontology for calcium imaging.\n                            Developed under the auspices of \n                            European Union\n                            Human Brain Project (HBP)\n                            Work package SP 5.7.2 named NAR.\n                            NAR stands for Neural Activity Resource.\n                            narci stands for NAR Calcium Imaging.\n                 \n                         "
+                }
+            ],
+            "http://dublincore.org/documents/dcmi-terms/modified": [
+                {
+                    "@type": "http://www.w3.org/2001/XMLSchema#date",
+                    "@value": "2017-11-27"
+                }
+            ],
+            "http://dublincore.org/documents/dcmi-terms/title": [
+                {
+                    "@value": "narci version 0.2.1"
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#PMT_count",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Property",
+                "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "Pennartz Lab"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#PMT"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#TwoImagingSystem"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "PMT_count"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#integer"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     The number of PMTs used.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#laser_wavelength",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Property",
+                "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "https://en.wikipedia.org/wiki/Laser"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#image_acquisition_system"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@value": "nm"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#TwoImagingSystem"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "laser_wavelength"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Lasers are characterized according to their wavelength in a vacuum.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#PMT",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Property",
+                "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "https://en.wikipedia.org/wiki/Photomultiplier"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#image_acquisition_system"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#TwoImagingSystem"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "PMT"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#string"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Rate that imaging hardware captures visual representation snap shots.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#imaging_calcium_device",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Property",
+                "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "Grienberger-Konnerth, Neuron 73, 862-885 (2012), DOI:10.1016/j.neuron.2012.02.011"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#image_acquisition_system"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#TwoImagingSystem"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "imaging_calcium_device"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#string"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     A device that provides 3D brain tissue \n                     imaging capabilities, including confocal \n                     and two-photon microscopy.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#CraniotomyProcedure",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "CraniotomyProcedure"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+                {
+                    "@id": "http://www.w3.org/ns/prov#Activity"
+                },
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#Metadata"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     An experimental procedure, that might use different protocol, \n                     for surgical operation in which a bone flap is temporarily removed \n                     from skull to access to the brain. Usually rodents in calcium \n                     imaging context.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#Subject",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "Subject"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#Metadata"
+                },
+                {
+                    "@id": "http://www.w3.org/ns/prov#Entity"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     An experimental subject in calcium imaging. \n                     Usually a rodent.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#TW",
+            "@type": [
+                "http://xmlns.com/foaf/0.1/Person"
+            ],
+            "http://xmlns.com/foaf/0.1/name": [
+                {
+                    "@value": "Thomas Wachtler"
+                }
+            ],
+            "http://xmlns.com/foaf/0.1/publications": [
+                {
+                    "@id": "http://dblp.uni-trier.de/pers/hd/w/Wachtler:Thomas"
+                }
+            ],
+            "http://xmlns.com/foaf/0.1/workplaceHomepage": [
+                {
+                    "@id": "http://www.lmu.de"
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#AnaesthesiaProtocol",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "AnaesthesiaProtocol"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#Metadata"
+                },
+                {
+                    "@id": "http://www.w3.org/ns/prov#Entity"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     A protocol to apply anasthetic drug for the surgery.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#regionClassification",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Property",
+                "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            ],
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#RegionClassification"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "regionClassification"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#Metadata"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Instance of narci:RegionClassification.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#imaging_hardware",
+            "http://www.w3.org/2002/07/owl#sameAs": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#image_acquisition_system"
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#anaesthesiaProtocol",
+            "@type": [
+                "http://www.w3.org/2002/07/owl#DatatypeProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Property"
+            ],
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#AnaesthesiaProtocol"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "anaesthesiaProtocol"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#Metadata"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Instance of narci:AnaesthesiaProtocol.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#reference",
+            "@type": [
+                "http://www.w3.org/2002/07/owl#DatatypeProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Property"
+            ],
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#Properties"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "reference"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#string"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     A reference to concept or property definition.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#XT",
+            "@type": [
+                "http://xmlns.com/foaf/0.1/Person"
+            ],
+            "http://xmlns.com/foaf/0.1/name": [
+                {
+                    "@value": "Xoana Troncoso"
+                }
+            ],
+            "http://xmlns.com/foaf/0.1/publications": [
+                {
+                    "@id": "https://scholar.google.com/citations?user=OtTtYxUAAAAJ"
+                }
+            ],
+            "http://xmlns.com/foaf/0.1/workplaceHomepage": [
+                {
+                    "@id": "http://www.cnrs.fr"
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#anesthetics_oxygen",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Property",
+                "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "Allen Brain Observatory"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#anesthetics_type"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@value": "percent"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#AnaesthesiaProtocol"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "anesthetics_oxygen"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Supplemented oxygen level during anesthesia. \n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#anesthetics_drug",
+            "@type": [
+                "http://www.w3.org/2002/07/owl#DatatypeProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Property"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "Allen Brain Observatory"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#anesthetics_type"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#AnaesthesiaProtocol"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "anesthetics_drug"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#string"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     The name of the anaesthetic drug administered.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#DC_bias",
+            "http://www.w3.org/2002/07/owl#sameAs": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#PMT_offset"
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#twoPhotonImaging",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Property",
+                "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            ],
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#TwoPhotonImaging"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "twoPhotonImaging"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#Metadata"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Instance of narci:TwoPhotonImaging.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#cellFromRegionOfInterest",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Property",
+                "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            ],
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#CellFromRegionOfInterest"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "cellFromRegionOfInterest"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#Metadata"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Instance of narci:CellFromRegionOfInterest.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#TimeSeriesExtract",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "TimeSeriesExtract"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#Metadata"
+                },
+                {
+                    "@id": "http://www.w3.org/ns/prov#Activity"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Extracting image sequences.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#fluorescent_calcium_sensors",
+            "http://www.w3.org/2002/07/owl#sameAs": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#neuronal_calcium_sensors"
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#visualStimulus",
+            "@type": [
+                "http://www.w3.org/2002/07/owl#DatatypeProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Property"
+            ],
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#VisualStimulus"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "visualStimulus"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#Metadata"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Instance of narci:VisualStimulus.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#PMT_gain",
+            "@type": [
+                "http://www.w3.org/2002/07/owl#DatatypeProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Property"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "Pennartz Lab"
+                },
+                {
+                    "@value": "https://en.wikipedia.org/wiki/Photomultiplier"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#PMT"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@value": "dB"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#TwoImagingSystem"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "PMT_gain"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#string"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Electronic gain of the PMTs. \n                     "
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#note": [
+                {
+                    "@value": "The string of double vector is needed. Todo vector types in rdfs range."
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#sensory_neurons",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Property",
+                "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "https://en.wikipedia.org/wiki/Sensory_neuron"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#stimulus"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#CellFromRegionOfInterest"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "sensory_neurons"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#string"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Sensory neurons also known as afferent neurons are neurons \n                     that convert a specific type of stimulus, via their \n                     receptors, into action potentials or graded potentials.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#ca_image_cortical_z_stacks",
+            "@type": [
+                "http://www.w3.org/2002/07/owl#DatatypeProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Property"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "Pennartz Lab, Allen Brain Observatory"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#image_acquisition_system"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#ImageSequence"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "ca_image_cortical_z_stacks"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#integer"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     The number of set of images acquired along cortical depth simultaneously.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#ca_target_cell_size",
+            "@type": [
+                "http://www.w3.org/2002/07/owl#DatatypeProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Property"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "Pennartz Lab"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#image_acquisition_system"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@value": "pixel"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#CellFromRegionOfInterest"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "ca_target_cell_size"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     The cell size that is imaged for calcium \n                     dynamics (traced).\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#CellFromRegionOfInterest",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "CellFromRegionOfInterest"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#Metadata"
+                },
+                {
+                    "@id": "http://www.w3.org/ns/prov#Entity"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Cell types interesting for the experiment\n                     from ROI.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#ca_image_resolution",
+            "@type": [
+                "http://www.w3.org/2002/07/owl#DatatypeProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Property"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "Pennartz Lab"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#image_acquisition_system"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@value": "pixel/frame"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#ImageSequence"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "ca_image_resolution"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#string"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Acquired image resolution (Width x Height).\n                     "
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#note": [
+                {
+                    "@value": "The string of a integer vector is needed. Todo vector types in rdfs range;"
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#animal_identification",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Property",
+                "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "https://en.wikipedia.org/wiki/Microchip_implant_(animal)"
+                },
+                {
+                    "@value": "https://en.wikipedia.org/wiki/Animal_identification"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#Subject"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "animal_identification"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#string"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Internal identification of the animal that \n                     experiment is performed on. Usually, \n                     animal identification, using a means of \n                     marking is a process done to identify and \n                     track specific animals.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#stim_protocol",
+            "http://www.w3.org/2002/07/owl#sameAs": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#stimulus"
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#two_photon_imaging_instrument",
+            "http://www.w3.org/2002/07/owl#sameAs": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#imaging_calcium_device"
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#imaging_system",
+            "http://www.w3.org/2002/07/owl#sameAs": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#image_acquisition_system"
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#relatedTo",
+            "@type": [
+                "http://www.w3.org/2002/07/owl#ObjectProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Property"
+            ],
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#Properties"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "relatedTo"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#string"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Two individuals are conceptually related to\n                     each other. \n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#phase_correction",
+            "http://www.w3.org/2002/07/owl#sameAs": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#motion_correction"
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#craniotomyProcedure",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Property",
+                "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            ],
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#CraniotomyProcedure"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "narci:craniotomyProcedure"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#Metadata"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Instance of narci:CraniotomyProcedure.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#VisualStimulus",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "VisualStimulus"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+                {
+                    "@id": "http://www.w3.org/ns/prov#Entity"
+                },
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#Metadata"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Type or details of visual stimulation, \n                     likely not be changed during experiment.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#ca_target_cell_type",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Property",
+                "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "Pennartz Lab"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#image_acquisition_system"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@value": "pixel"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#CellFromRegionOfInterest"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "ca_target_cell_type"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     The cell size that is imaged for calcium\n                     dynamics (traced).\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#neuronal_calcium_sensors",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Property",
+                "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "Allen Brain Observatory;https://en.wikipedia.org/wiki/Calcium_imaging#Chemical_indicators; Burgoyne, Nat Rev Neurosci. 2007 March ; 8(3): 182–193. doi:10.1038/nrn2093 ; Badura et. al. Neurophotonics, 1(2), 025008 (2014). doi:10.1117/1.NPh.1.2.025008, https://www.janelia.org/gcamp6-calcium-indicators-0"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#imaging_calcium_device"
+                },
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#visual_cortex"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#CellFromRegionOfInterest"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "neuronal_calcium_sensors"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#string"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Fluorescent molecules, usually protein, that can \n                     respond to the binding of Ca2+ ions by changing \n                     their fluorescence properties. This usually manifest \n                     as genetically encoded into transgenetic animal. \n                     Plasmids: CMV-GCaMP6s, CMV-GCaMP6m, CMV-GCaMP6f. \n                     Virusus: AAV1.Syn.GCaMP6f.WPRE.SV40, \n                     AAV1.Syn.GCaMP6s.WPRE.SV40, \n                     AAV1.Syn.GCaMP6m.WPRE.SV40, AAV5.Syn.GCaMP6m.WPRE.SV40, \n                     AAV5.Syn.GCaMP6f.WPRE.SV40, AAV5.Syn.GCaMP6s.WPRE.SV40, \n                     AAV9.Syn.GCaMP6f.WPRE.SV40, AAV9.Syn.GCaMP6m.WPRE.SV40, \n                     AAV9.Syn.GCaMP6s.WPRE.SV40, AAV1.CAG.GCaMP6s.WPRE.SV40, \n                     AAV5.CAG.GCaMP6s.WPRE.SV40, AAV9.CAG.GCaMP6s.WPRE.SV40, \n                     AAV1.CAG.Flex.GCaMP6f.WPRE.SV40, \n                     AAV1.CAG.Flex.GCaMP6m.WPRE.SV40, \n                     AAV1.CAG.Flex.GCaMP6s.WPRE.SV40, \n                     AAV1.Syn.Flex.GCaMP6f.WPRE.SV40, \n                     AAV1.Syn.Flex.GCaMP6m.WPRE.SV40, \n                     AAV1.Syn.Flex.GCaMP6s.WPRE.SV40, \n                     AAV5.CAG.Flex.GCaMP6f.WPRE.SV40, \n                     AAV5.CAG.Flex.GCaMP6m.WPRE.SV40, \n                     AAV5.CAG.Flex.GCaMP6s.WPRE.SV40, \n                     AAV5.Syn.Flex.GCaMP6f.WPRE.SV40, \n                     AAV5.Syn.Flex.GCaMP6m.WPRE.SV40, \n                     AAV5.Syn.Flex.GCaMP6s.WPRE.SV40, \n                     AAV9.CAG.Flex.GCaMP6f.WPRE.SV40, \n                     AAV9.CAG.Flex.GCaMP6m.WPRE.SV40, \n                     AAV9.CAG.Flex.GCaMP6s.WPRE.SV40, \n                     AAV9.Syn.Flex.GCaMP6f.WPRE.SV40, \n                     AAV9.Syn.Flex.GCaMP6m.WPRE.SV40, \n                     AAV9.Syn.Flex.GCaMP6s.WPRE.SV40\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#craniotomyProtocol",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Property",
+                "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            ],
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#CraniotomyProtocol"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "craniotomyProtocol"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#Metadata"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Instance of narci:CraniotomyProtocol.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#ca_target_cell_y",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Property",
+                "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "Pennartz Lab"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#image_acquisition_system"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@value": "pixel"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#CellFromRegionOfInterest"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "ca_target_cell_y"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     The cell y-coordinate on the digital image, \n                     that is imaged for calcium dynamics (traced).\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#visual_stimuli",
+            "@type": [
+                "http://www.w3.org/2002/07/owl#DatatypeProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Property"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "Allen Brain Observatory"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#sensory_neurons"
+                },
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#stimulus"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#VisualStimulus"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "visual_stimuli"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#string"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     An external light sources able to emit modulated light, \n                     that generates neuronal response.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#scanner",
+            "http://www.w3.org/2002/07/owl#sameAs": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#imaging_microscopy_device"
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#craniotomy",
+            "@type": [
+                "http://www.w3.org/2002/07/owl#DatatypeProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Property"
+            ],
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#Craniotomy"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "narci:craniotomy"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#Metadata"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Instance of narci:Craniotomy .\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#image_microscopy_zoom",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Property",
+                "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "Pennartz Lab"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#image_acquisition_system"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#TwoImagingSystem"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "image_microscopy_zoom"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Ability of an optical instrument to enlarge the appearance of \n                     scanned area.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#zoom",
+            "http://www.w3.org/2002/07/owl#sameAs": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#image_microscopy_zoom"
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#MD",
+            "@type": [
+                "http://xmlns.com/foaf/0.1/Person"
+            ],
+            "http://xmlns.com/foaf/0.1/name": [
+                {
+                    "@value": "Michael Denker"
+                }
+            ],
+            "http://xmlns.com/foaf/0.1/publications": [
+                {
+                    "@id": "http://dblp.uni-trier.de/pers/hd/d/Denker:Michael"
+                }
+            ],
+            "http://xmlns.com/foaf/0.1/workplaceHomepage": [
+                {
+                    "@id": "http://www.fz-juelich.de"
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#imaging_microscopy_device",
+            "@type": [
+                "http://www.w3.org/2002/07/owl#DatatypeProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Property"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "Pennartz Lab, https://en.wikipedia.org/wiki/Image_scanner"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#image_acquisition_system"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#TwoImagingSystem"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "imaging_microscopy_device"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#string"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Optical scanner applied to in-vivo biological area.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#anesthetics_monitor",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Property",
+                "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "Allen Brain Observatory"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#anesthetics_type"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#AnaesthesiaProtocol"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "anesthetics_monitor"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#string"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     A machine to monitor vital signs of the \n                     animal during anesthesia.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#ImageSequence",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "ImageSequence"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#Metadata"
+                },
+                {
+                    "@id": "http://www.w3.org/ns/prov#Entity"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Calcium imaging output, raw \n                     image sequences.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#Properties",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class",
+                "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "Properties"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+                {
+                    "@id": "http://www.w3.org/ns/prov#Entity"
+                },
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#Metadata"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Calcium imaging additional properties\n                     that can be used as a property for\n                     properties.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#fluorescent_calcium_indicator",
+            "http://www.w3.org/2002/07/owl#sameAs": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#neuronal_calcium_sensors"
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#imaging_session_id",
+            "@type": [
+                "http://www.w3.org/2002/07/owl#DatatypeProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Property"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "Pennarz Lab"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#imaging_session"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#TwoPhotonImaging"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "imaging_session_id"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     The session identification for the performed \n                     imaging experiment.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#unit",
+            "@type": [
+                "http://www.w3.org/2002/07/owl#DatatypeProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Property"
+            ],
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#Properties"
+                }
+            ],
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#string"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "unit"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     A unit for a physical measurement.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#VisualStimulation",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "VisualStimulation"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#Metadata"
+                },
+                {
+                    "@id": "http://www.w3.org/ns/prov#Activity"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Visual stimulation details during experiment.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#PMT_offset",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Property",
+                "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "Pennartz Lab, https://en.wikipedia.org/wiki/DC_bias"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#PMT"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#TwoImagingSystem"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "PMT_offset"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#string"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Mean value of the waveform from PMTs.\n                     "
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#note": [
+                {
+                    "@value": "The string of double vector is needed. Todo vector types in rdfs range."
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#CSL",
+            "@type": [
+                "http://xmlns.com/foaf/0.1/Person"
+            ],
+            "http://xmlns.com/foaf/0.1/name": [
+                {
+                    "@value": "Carien S. Lansink"
+                }
+            ],
+            "http://xmlns.com/foaf/0.1/publications": [
+                {
+                    "@id": "https://scholar.google.com/citations?user=9hBHfFUAAAAJ"
+                }
+            ],
+            "http://xmlns.com/foaf/0.1/workplaceHomepage": [
+                {
+                    "@id": "http://www.uva.nl"
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#DC_coefficient",
+            "http://www.w3.org/2002/07/owl#sameAs": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#PMT_offset"
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#laser_spec",
+            "http://www.w3.org/2002/07/owl#sameAs": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#laser_excitation_device"
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#FluorescenceActivity",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/prov#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "FluorescenceActivity"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#Metadata"
+                },
+                {
+                    "@id": "http://www.w3.org/ns/prov#Entity"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Fluorescence Activity trace from \n                     time series. \n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#ca_target_cell_types_all",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Property",
+                "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "Pennartz Lab"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#imaging_session"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#CellFromRegionOfInterest"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "ca_target_cell_types_all"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#string"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Cell types imaged for calcium dynamics. \n                     Such as Neuron, PV for entire experiment.\n                     "
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#note": [
+                {
+                    "@value": "The string of a string vector is needed. Todo vector types in rdfs range; "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#TwoImagingSystem",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "TwoImagingSystem"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+                {
+                    "@id": "http://www.w3.org/ns/prov#Entity"
+                },
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#Metadata"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Two-photon excitation microscopy system.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#laser_power",
+            "@type": [
+                "http://www.w3.org/2002/07/owl#DatatypeProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Property"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "https://en.wikipedia.org/wiki/Laser#Examples_by_power"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#image_acquisition_system"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@value": "mW"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#TwoImagingSystem"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "laser_power"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Summary of specification of a laser, a device that emits\n                     light through a process of optical amplification based on \n                     the stimulated emission of electromagnetic radiation.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#frame_rate",
+            "@type": [
+                "http://www.w3.org/2002/07/owl#DatatypeProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Property"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "https://en.wikipedia.org/wiki/Frame_rate"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#image_acquisition_system"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@value": "Hz"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#TwoImagingSystem"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "rate"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Rate that imaging hardware captures visual representation snap shots.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#ca_target_cell_x",
+            "@type": [
+                "http://www.w3.org/2002/07/owl#DatatypeProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Property"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "Pennartz Lab"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#image_acquisition_system"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@value": "pixel"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#CellFromRegionOfInterest"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "ca_target_cell_x"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     The cell x-coordinate on the digital image, \n                     that is imaged for calcium dynamics (traced).\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#perception",
+            "@type": [
+                "http://www.w3.org/2002/07/owl#DatatypeProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Property"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "https://en.wikipedia.org/wiki/Perception, Schacter, Daniel (2011). Psychology. Worth Publishers."
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#VisualStimulusPresentation"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "perception"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#string"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Perception (from the Latin perceptio) is the organization, \n                     identification, and interpretation of sensory information \n                     in order to represent and understand the presented \n                     information, or the environment. All perception involves \n                     signals that go through the nervous system, which in turn \n                     result from physical or chemical stimulation of the \n                     sensory system.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#ca_target_cell_id",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Property",
+                "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "Pennartz Lab"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#image_acquisition_system"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#CellFromRegionOfInterest"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "ca_target_cell_id"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#integer"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     The cell identification that is imaged for calcium dynamics (traced).\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#voxel_size",
+            "http://www.w3.org/2002/07/owl#sameAs": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#image_microscopy_voxel_size"
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#motion_correction",
+            "@type": [
+                "http://www.w3.org/2002/07/owl#DatatypeProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Property"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "Allen Brain Observatory, Pennartz Lab"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#image_acquisition_system"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@value": "pix"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#TwoImagingSystem"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "motion_correction"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     The two-photon calcium imaging videos exhibited non-trivial \n                     frame-to-frame motion artifacts likely due to animal or \n                     brain motion. Scan line correction.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#fluorescenceActivity",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Property",
+                "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            ],
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#FluorescenceActivity"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "fluorescenceActivity"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#Metadata"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Instance of narci:FluorescenceActivity.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#ca_target_cell_raw_trajectory",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Property",
+                "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "Pennartz Lab"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#image_acquisition_system"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@value": "pixel"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#FluorescenceActivity"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "ca_target_cell_raw_trajectory"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#string"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     The raw fluorescence traces of the cell that is \n                     imaged for calcium dynamics (traced).\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#imaging_microscopy_objective_type",
+            "@type": [
+                "http://www.w3.org/2002/07/owl#DatatypeProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Property"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "Allen Brain Observatory, Pennartz Lab"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#image_acquisition_system"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#TwoImagingSystem"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "imaging_microscopy_objective_type"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Objective to use in focusing the light on the sample\n                     and to direct fluorescence through the emission path\n                     of the system.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#JSM",
+            "@type": [
+                "http://xmlns.com/foaf/0.1/Person"
+            ],
+            "http://xmlns.com/foaf/0.1/name": [
+                {
+                    "@value": "Jorrit S. Montijn"
+                }
+            ],
+            "http://xmlns.com/foaf/0.1/publications": [
+                {
+                    "@id": "https://scholar.google.de/citations?user=6D9I2KcAAAAJ"
+                }
+            ],
+            "http://xmlns.com/foaf/0.1/workplaceHomepage": [
+                {
+                    "@id": "http://www.uva.nl"
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#channel_wavelength",
+            "http://www.w3.org/2002/07/owl#sameAs": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#image_microscopy_channels"
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#RegionClassification",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "RegionClassification"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+                {
+                    "@id": "http://www.w3.org/ns/prov#Activity"
+                },
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#Metadata"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     A classification from ROI. \n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#onto",
+            "@type": [
+                "http://www.w3.org/2002/07/owl#DatatypeProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Property"
+            ],
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#Properties"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "onto"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#string"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Reference to other ontology on the given \n                     individual.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#image_microscopy_channels",
+            "@type": [
+                "http://www.w3.org/2002/07/owl#DatatypeProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Property"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "Pennartz Lab"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#image_acquisition_system"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@value": "nm"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#TwoImagingSystem"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "image_microscopy_channels"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#string"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Multispectral wavelengths.\n                     "
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#note": [
+                {
+                    "@value": "The string of double vector is needed. Todo vector types in rdfs range."
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#imaging_depth",
+            "@type": [
+                "http://www.w3.org/2002/07/owl#DatatypeProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Property"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "Pennarz Lab"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#visual_cortex"
+                },
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#imaging_calcium_device"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@value": "micrometer"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#TwoPhotonImaging"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "imaging_depth"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Physical depth of image plane from\n                     the surface of visual cortex. \n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#ca_target_cell_count",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Property",
+                "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "Pennartz Lab"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#ca_target_cell_types_all"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#RegionClassification"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "ca_target_cell_types_all"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#string"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Cell types imaged for calcium dynamics.\n                     Such as Neuron, PV for entire experiment.\n                     "
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#note": [
+                {
+                    "@value": "The string of integer vector is needed. Todo vector types in rdfs range; "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#imageSequence",
+            "@type": [
+                "http://www.w3.org/2002/07/owl#DatatypeProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Property"
+            ],
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#ImageSequence"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "imageSequence"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#Metadata"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Instance of narci:ImageSequence\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#imaging_session_start",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Property",
+                "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "Pennartz Lab"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#imaging_session"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#TwoPhotonImaging"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "imaging_session_start"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#date"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     A wall clock time where the imaging\n                     session starts. (hh:mm:ss)\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#laser",
+            "http://www.w3.org/2002/07/owl#sameAs": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#laser_excitation_device"
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#visualStimulation",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Property",
+                "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            ],
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#VisualStimulation"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "visualStimulation"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#Metadata"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Instance of narci:VisualStimulation.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#subject",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Property",
+                "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            ],
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#Subject"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "subject"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#Metadata"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Instance of narci:Subject.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#twoImagingSystem",
+            "@type": [
+                "http://www.w3.org/2002/07/owl#DatatypeProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Property"
+            ],
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#TwoImagingSystem"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "twoImagingSystem"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#Metadata"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Instance of narci:TwoImagingSystem.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#image_microscopy_voxel_size",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Property",
+                "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "Pennartz Lab"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#image_acquisition_system"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@value": "um/pix"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#ImageSequence"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "image_microscopy_voxel_size"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     The volume element, defined in 3D space.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#TwoPhotonImaging",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "TwoPhotonImaging"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+                {
+                    "@id": "http://www.w3.org/ns/prov#Activity"
+                },
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#Metadata"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Two-photon excitation microscopy is a fluorescence \n                     imaging technique that allows imaging of living \n                     tissue up to about one millimeter in depth.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#anesthetics_drug_flowrate",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Property",
+                "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "Allen Brain Observatory"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#anesthetics_type"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@value": "ml/min"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#AnaesthesiaProtocol"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "anesthetics_drug_flowrate"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Flow rate of the anaesthetic drug injected into \n                     animal.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#visual_cortex",
+            "@type": [
+                "http://www.w3.org/2002/07/owl#DatatypeProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Property"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "https://en.wikipedia.org/wiki/Visual_cortex"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#visual_stimuli"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#RegionOfInterest"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "visual_cortex"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#string"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     An external light sources able to emit modulated light, \n                     that generates neuronal response.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#SG",
+            "@type": [
+                "http://xmlns.com/foaf/0.1/Person"
+            ],
+            "http://xmlns.com/foaf/0.1/name": [
+                {
+                    "@value": "Sonja Gruen"
+                }
+            ],
+            "http://xmlns.com/foaf/0.1/publications": [
+                {
+                    "@id": "https://scholar.google.com/citations?user=b4DhWyQAAAAJ"
+                }
+            ],
+            "http://xmlns.com/foaf/0.1/workplaceHomepage": [
+                {
+                    "@id": "http://www.rwth-aachen.de/"
+                },
+                {
+                    "@id": "http://www.fz-juelich.de"
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#ca_image_count",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Property",
+                "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "Pennartz Lab"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#image_acquisition_system"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#ImageSequence"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "ca_image_count"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#integer"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Summary of specification of a laser, a device that emits\n                     light through a process of optical amplification based on\n                     the stimulated emission of electromagnetic radiation.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#imaging_date",
+            "@type": [
+                "http://www.w3.org/2002/07/owl#DatatypeProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Property"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#TwoPhotonImaging"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "imaging_date"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#date"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     A date when experiment(s) are performed \n                     formatted with yyyy-mm-dd.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#anesthetics_machine",
+            "@type": [
+                "http://www.w3.org/2002/07/owl#DatatypeProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Property"
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#onto": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#reference": [
+                {
+                    "@value": "Allen Brain Observatory, https://en.wikipedia.org/wiki/Anesthetic"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#relatedTo": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#anesthetics_type"
+                }
+            ],
+            "http://www.purl.org/narci/v0.2.1/schema#unit": [
+                {
+                    "@id": "http://www.w3.org/2002/07/owl#Nothing"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#AnaesthesiaProtocol"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "anesthetics_machine"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#string"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     The supporting machine or system that helps in \n                     administering anesthesia.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#VisualStimulusPresentation",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "VisualStimulusPresentation"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+                {
+                    "@id": "http://www.w3.org/ns/prov#Entity"
+                },
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#Metadata"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Type or details of visual stimulation, \n                     how it is presented. Likely not be \n                     changed during experiment.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#RegionOfInterest",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "RegionOfInterest"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#Metadata"
+                },
+                {
+                    "@id": "http://www.w3.org/ns/prov#Entity"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Brain area or biological entity that\n                     is interesting for the experiment.\n                     Could be cell somata blood vessels\n                     neurophil.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#CMAP",
+            "@type": [
+                "http://xmlns.com/foaf/0.1/Person"
+            ],
+            "http://xmlns.com/foaf/0.1/name": [
+                {
+                    "@value": "Cyriel M.A. Pennartz"
+                }
+            ],
+            "http://xmlns.com/foaf/0.1/publications": [
+                {
+                    "@id": "https://scholar.google.com/citations?user=9YosOMoAAAAJ"
+                }
+            ],
+            "http://xmlns.com/foaf/0.1/workplaceHomepage": [
+                {
+                    "@id": "http://www.uva.nl"
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#regionOfInterest",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Property",
+                "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            ],
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#domain": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#RegionOfInterest"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "regionOfInterest"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#Metadata"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     Instance of narci:RegionOfInterest.\n                     "
+                }
+            ]
+        },
+        {
+            "@id": "http://www.purl.org/narci/v0.2.1/schema#CraniotomyProtocol",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@value": "CraniotomyProtocol"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+                {
+                    "@id": "http://www.w3.org/ns/prov#Entity"
+                },
+                {
+                    "@id": "http://www.purl.org/narci/v0.2.1/schema#Metadata"
+                }
+            ],
+            "http://www.w3.org/2004/02/skos/core#definition": [
+                {
+                    "@language": "en",
+                    "@value": "\n                     An experimental protocol for surgical operation in which \n                     a bone flap is temporarily removed from skull to access to the brain.\n                     Usually rodents in calcium imaging context.\n                     "
+                }
+            ]
+        }
+    ]
+}

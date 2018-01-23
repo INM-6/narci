@@ -28,6 +28,9 @@ tagged versions or in released files, these should be linked in the below list
 of production URLs.
 
 ## Ontology current development URL
+
+Development is performed on `ontology/narci` file in Turtle syntax.
+
 * `http://www.purl.org/narci/v0.3dev/schema` 
 
 ## Ontology in production URLs
@@ -44,6 +47,12 @@ of production URLs.
   to corresponding tag, release version. 
 * Remove previous dev version persistent URL to avoid unreachble links.
   There should be only single development persistent URL at a time.
+
+## Versions
+
+`versions` directory contains all production releases prior to dev version. 
+It contains turtle syntax file in `.tll` extension and auto-converted HBP 
+compatible JSON-LD format with `.json` extension.
 
 # How to cite
 
