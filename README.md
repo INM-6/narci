@@ -72,10 +72,10 @@ for any additional resource.
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 Generic License</a>.
 
 ```
-(c) 2017 University of Amsterdam
-         Forschungszentrum Juelich GmbH
-         The German Neuroinformatics Node (G-Node)
-         Le Centre National de la Recherche Scientifique (CRNS)
+(c) 2017, 2018 University of Amsterdam
+               Forschungszentrum Juelich GmbH
+               The German Neuroinformatics Node (G-Node)
+               Le Centre National de la Recherche Scientifique (CRNS)
 
         
 ```
