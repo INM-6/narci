@@ -789,7 +789,8 @@ narci:frame_rate a rdfs:Property;
      narci:onto owl:Nothing;
      narci:relatedTo narci:image_acquisition_system;
      skos:definition """
-                     Rate that imaging hardware captures visual representation snap shots.
+                     Rate that imaging hardware captures visual 
+                     representation snap shots.
                      """@en .
 
 narci:PMT a rdfs:Property;
@@ -799,11 +800,17 @@ narci:PMT a rdfs:Property;
      rdfs:range xsd:string;
      rdf:type owl:DatatypeProperty;
      narci:reference "https://en.wikipedia.org/wiki/Photomultiplier";
+     narci:reference "https://www.hamamatsu.com/jp/en/3001.html";
      narci:unit owl:Nothing;
      narci:onto owl:Nothing;
      narci:relatedTo narci:image_acquisition_system;
      skos:definition """
-                     Rate that imaging hardware captures visual representation snap shots.
+                     PMT is a Photomultiplier tube, members of the class 
+                     of vacuum tubes, and more specifically vacuum phototubes, 
+                     are extremely sensitive detectors of light in the 
+                     ultraviolet, visible, and near-infrared ranges of 
+                     the electromagnetic spectrum.  details of this device 
+                     and parameters, for example, from provider Hamamatsu.
                      """@en .
 
 narci:PMT_count a rdfs:Property;
@@ -987,13 +994,12 @@ narci:laser_power a rdfs:Property;
      narci:onto owl:Nothing;
      narci:relatedTo narci:image_acquisition_system;
      skos:definition """
-                     Summary of specification of a laser, a device that emits
-                     light through a process of optical amplification based on 
-                     the stimulated emission of electromagnetic radiation.
+                     The power of the laser source in milli Watts.
+                     It measures the performance of the device. 
+                     Measurement of power or pulse energy.
                      """@en .
 
      
-
 # 
 # narci:VisualStimulation,prov:Activity
 # 
@@ -1144,7 +1150,7 @@ narci:visual_cortex a rdfs:Property;
 #
 narci:ca_target_cell_count a rdfs:Property;
      rdfs:isDefinedBy <http://www.purl.org/narci/v0.3dev/schema#>;
-     rdfs:label "ca_target_cell_types_all";
+     rdfs:label "ca_target_cell_types_count";
      rdfs:domain narci:RegionClassification;
      rdfs:range xsd:string;
      skos:note "The string of integer vector is needed. Todo vector types in rdfs range; ";
@@ -1154,7 +1160,7 @@ narci:ca_target_cell_count a rdfs:Property;
      narci:onto owl:Nothing;
      narci:relatedTo narci:ca_target_cell_types_all;
      skos:definition """
-                     Cell types imaged for calcium dynamics.
+                     Cell counts imaged for calcium dynamics.
                      Such as Neuron, PV for entire experiment.
                      """@en .
 
@@ -1238,8 +1244,9 @@ narci:ca_target_cell_types_all a rdfs:Property;
      narci:onto owl:Nothing;
      narci:relatedTo narci:imaging_session;
      skos:definition """
-                     Cell types imaged for calcium dynamics. 
-                     Such as Neuron, PV for entire experiment.
+                     Cell types imaged for calcium dynamics.
+                     Such as neuron, PV for entire experiment. 
+                     A list of strings.
                      """@en .
 
 narci:ca_target_cell_id a rdfs:Property;
@@ -1312,14 +1319,15 @@ narci:ca_target_cell_type a rdfs:Property;
      narci:onto owl:Nothing;
      narci:relatedTo narci:image_acquisition_system;
      skos:definition """
-                     The cell size that is imaged for calcium
-                     dynamics (traced).
+                     The cell type that is imaged for calcium dynamics.
+                     For example a neuron or PV. This is a single cell
+                     name specifically.
                      """@en .
 #
 # narci:TimeSeriesExtract,prov:Activity
 # 
 
-#
+
 # narci:FluorescenceActivity,prov:Entity
 # 
 narci:ca_target_cell_raw_trajectory a rdfs:Property;
