@@ -1,12 +1,17 @@
 #
+#  (c) 2017, 2018 University of Amsterdam
+#                 Forschungszentrum Juelich GmbH
+#                 The German Neuroinformatics Node (G-Node)
+#                 Le Centre National de la Recherche Scientifique (CRNS)
+#
 #  narci is an ontology for calcium imaging.
-#  (c) 2017
-#
-#  University of Amsterdam
-#  Forschungszentrum Juelich GmbH
-#  The German Neuroinformatics Node (G-Node)
-#  Le Centre National de la Recherche Scientifique (CRNS)
-#
+#  Developed under the auspices of 
+#  European Union
+#  Human Brain Project (HBP)
+#  Work package SP 5.7.2 named NAR.
+#  NAR stands for Neural Activity Resource.
+#  narci stands for NAR Calcium Imaging.
+#  
 #  Distributed under the terms of the Creative Commons 
 #  Attribution 4.0 Generic (CC BY 4.0)
 #
@@ -77,13 +82,14 @@ narci:CMAP a foaf:Person;
 
 # NARCI Ontology
 <http://www.purl.org/narci/v0.3dev/schema#> a owl:Ontology ;
-     dcterm:title "narci version v0.3dev" ;
-     dcterm:modified "2017-11-27"^^<http://www.w3.org/2001/XMLSchema#date>;
+     dcterm:title "narci v0.3dev" ;
+     dcterm:modified "2018-01-24"^^<http://www.w3.org/2001/XMLSchema#date>;
+     dcterm:license <https://creativecommons.org/licenses/by/4.0/>;
      dcterm:description """
-                            (c) 2017 University of Amsterdam
-                                     Forschungszentrum Juelich GmbH
-                                     The German Neuroinformatics Node (G-Node)
-                                     Le Centre National de la Recherche Scientifique (CRNS)
+                            (c) 2017, 2018 University of Amsterdam
+                                           Forschungszentrum Juelich GmbH
+                                           The German Neuroinformatics Node (G-Node)
+                                           Le Centre National de la Recherche Scientifique (CRNS)
 
                             narci is an ontology for calcium imaging.
                             Developed under the auspices of 
@@ -221,8 +227,8 @@ narci:TwoPhotonImaging a rdfs:Class;
      rdfs:subClassOf narci:Metadata;
      rdfs:label "TwoPhotonImaging";
      skos:definition """
-                     Two-photon excitation microscopy is a fluorescence 
-                     imaging technique that allows imaging of living 
+                     Two-photon excitation microscopy is a fluorescence
+                     imaging technique that allows imaging of living
                      tissue up to about one millimeter in depth.
                      """@en .
 
@@ -727,7 +733,7 @@ narci:imaging_date a rdfs:Property;
                      formatted with yyyy-mm-dd.
                      """@en .
 
-narci:narci_0000045 owl:sameAs narci:image_date .
+narci:narci_0000046 owl:sameAs narci:imaging_date .
 
 narci:imaging_session a rdfs:Property;
      rdfs:isDefinedBy <http://www.purl.org/narci/v0.3dev/schema#> ;
@@ -744,7 +750,7 @@ narci:imaging_session a rdfs:Property;
                      imaging acquisition is performed.
                      """@en .
 
-narci:narci_0000046 owl:sameAs narci:imaging_session .
+narci:narci_0000047 owl:sameAs narci:imaging_session .
 
 narci:imaging_session_id a rdfs:Property;
      rdfs:isDefinedBy <http://www.purl.org/narci/v0.3dev/schema#> ;
@@ -761,7 +767,7 @@ narci:imaging_session_id a rdfs:Property;
                      imaging experiment.
                      """@en .
 
-narci:narci_0000047 owl:sameAs narci:imaging_session_id .
+narci:narci_0000048 owl:sameAs narci:imaging_session_id .
 
 narci:imaging_depth a rdfs:Property;
      rdfs:isDefinedBy <http://www.purl.org/narci/v0.3dev/schema#> ;
@@ -779,7 +785,7 @@ narci:imaging_depth a rdfs:Property;
                      the surface of visual cortex. 
                      """@en .
 
-narci:narci_0000048 owl:sameAs narci:imaging_depth .
+narci:narci_0000049 owl:sameAs narci:imaging_depth .
 narci:cortical_depth owl:sameAs narci:imaging_depth .
 
 narci:imaging_session_start a rdfs:Property;
@@ -797,7 +803,7 @@ narci:imaging_session_start a rdfs:Property;
                      session starts. (hh:mm:ss)
                      """@en .
 
-narci:narci_0000049 owl:sameAs narci:imaging_session_start .
+narci:narci_0000050 owl:sameAs narci:imaging_session_start .
 
 narci:imaging_session_end a rdfs:Property;
      rdfs:isDefinedBy <http://www.purl.org/narci/v0.3dev/schema#>;
@@ -814,7 +820,7 @@ narci:imaging_session_end a rdfs:Property;
                      session ends. (hh:mm:ss)
                      """@en .
 
-narci:narci_0000050 owl:sameAs narci:imaging_session_end .
+narci:narci_0000051 owl:sameAs narci:imaging_session_end .
 
 narci:imaging_session_duration a rdfs:Property;
      rdfs:isDefinedBy <http://www.purl.org/narci/v0.3dev/schema#>;
@@ -831,7 +837,7 @@ narci:imaging_session_duration a rdfs:Property;
                      imaging session.
                      """@en .
 
-narci:narci_0000051 owl:sameAs narci:imaging_session_duration .
+narci:narci_0000052 owl:sameAs narci:imaging_session_duration .
 
 
 #
@@ -857,7 +863,7 @@ narci:image_acquisition_system a rdfs:Property;
                      (physiology).
                      """@en .
 
-narci:narci_0000052 owl:sameAs narci:image_acquisition_system .
+narci:narci_0000053 owl:sameAs narci:image_acquisition_system .
 narci:imaging_hardware owl:sameAs narci:image_acquisition_system .
 narci:imaging_system owl:sameAs narci:image_acquisition_system .
 
@@ -877,7 +883,7 @@ narci:imaging_calcium_device a rdfs:Property;
                      and two-photon microscopy.
                      """@en .
 
-narci:narci_0000053 owl:sameAs narci:imaging_calcium_device .
+narci:narci_0000054 owl:sameAs narci:imaging_calcium_device .
 narci:two_photon_imaging_instrument owl:sameAs narci:imaging_calcium_device .
 
 narci:frame_rate a rdfs:Property;
@@ -895,7 +901,7 @@ narci:frame_rate a rdfs:Property;
                      representation snap shots.
                      """@en .
 
-narci:narci_0000054 owl:sameAs narci:frame_rate .
+narci:narci_0000055 owl:sameAs narci:frame_rate .
 
 narci:PMT a rdfs:Property;
      rdfs:isDefinedBy <http://www.purl.org/narci/v0.3dev/schema#>;
@@ -917,7 +923,7 @@ narci:PMT a rdfs:Property;
                      and parameters, for example, from provider Hamamatsu.
                      """@en .
 
-narci:narci_0000055 owl:sameAs narci:PMT .
+narci:narci_0000056 owl:sameAs narci:PMT .
 
 narci:PMT_count a rdfs:Property;
      rdfs:isDefinedBy <http://www.purl.org/narci/v0.3dev/schema#>;
@@ -933,7 +939,7 @@ narci:PMT_count a rdfs:Property;
                      The number of PMTs used.
                      """@en .
 
-narci:narci_0000056 owl:sameAs narci:PMT_count .
+narci:narci_0000057 owl:sameAs narci:PMT_count .
 
 narci:PMT_gain a rdfs:Property;
      rdfs:isDefinedBy <http://www.purl.org/narci/v0.3dev/schema#>;
@@ -951,7 +957,7 @@ narci:PMT_gain a rdfs:Property;
                      Electronic gain of the PMTs. 
                      """@en .
 
-narci:narci_0000057 owl:sameAs narci:PMT_gain .
+narci:narci_0000058 owl:sameAs narci:PMT_gain .
 
 narci:PMT_offset a rdfs:Property;
      rdfs:isDefinedBy <http://www.purl.org/narci/v0.3dev/schema#>;
@@ -968,7 +974,7 @@ narci:PMT_offset a rdfs:Property;
                      Mean value of the waveform from PMTs.
                      """@en .
 
-narci:narci_0000058 owl:sameAs narci:PMT_offset .
+narci:narci_0000059 owl:sameAs narci:PMT_offset .
 narci:DC_bias owl:sameAs narci:PMT_offset .
 narci:DC_coefficient owl:sameAs narci:PMT_offset .
 
@@ -988,7 +994,7 @@ narci:motion_correction a rdfs:Property;
                      brain motion. Scan line correction.
                      """@en .
 
-narci:narci_0000058 owl:sameAs narci:motion_correction .
+narci:narci_0000060 owl:sameAs narci:motion_correction .
 narci:phase_correction owl:sameAs narci:motion_correction .
 
 narci:laser_wavelength a rdfs:Property;
@@ -1005,7 +1011,7 @@ narci:laser_wavelength a rdfs:Property;
                      Lasers are characterized according to their wavelength in a vacuum.
                      """@en .
 
-narci:narci_0000059 owl:sameAs narci:laser_wavelength .
+narci:narci_0000061 owl:sameAs narci:laser_wavelength .
 narci:wavelength owl:sameAs narci:laser_wavelength .
 
 narci:image_microscopy_zoom a rdfs:Property;
@@ -1023,7 +1029,7 @@ narci:image_microscopy_zoom a rdfs:Property;
                      scanned area.
                      """@en .
 
-narci:narci_0000060 owl:sameAs narci:image_microscopy_zoom .
+narci:narci_0000062 owl:sameAs narci:image_microscopy_zoom .
 narci:zoom owl:sameAs narci:image_microscopy_zoom .
 
 narci:image_microscopy_channels a rdfs:Property;
@@ -1041,7 +1047,7 @@ narci:image_microscopy_channels a rdfs:Property;
                      Multispectral wavelengths.
                      """@en .
 
-narci:narci_0000061 owl:sameAs narci:image_microscopy_channels .
+narci:narci_0000063 owl:sameAs narci:image_microscopy_channels .
 narci:channel_wavelength owl:sameAs narci:image_microscopy_channels .
 
 narci:imaging_microscopy_objective_type a rdfs:Property;
@@ -1060,7 +1066,7 @@ narci:imaging_microscopy_objective_type a rdfs:Property;
                      of the system.
                      """@en .
 
-narci:narci_0000062 owl:sameAs narci:image_microscopy_objective_type .
+narci:narci_0000064 owl:sameAs narci:image_microscopy_objective_type .
 narci:objective owl:sameAs narci:imaging_microscopy_objective_type .
 
 narci:imaging_microscopy_device a rdfs:Property;
@@ -1077,7 +1083,7 @@ narci:imaging_microscopy_device a rdfs:Property;
                      Optical scanner applied to in-vivo biological area.
                      """@en .
 
-narci:narci_0000063 owl:sameAs narci:imaging_microscopy_device .
+narci:narci_0000065 owl:sameAs narci:imaging_microscopy_device .
 narci:scanner owl:sameAs narci:imaging_microscopy_device .
 narci:image_scanner owl:sameAs narci:imaging_microscopy_device .
 
@@ -1097,7 +1103,7 @@ narci:laser_excitation_device a rdfs:Property;
                      the stimulated emission of electromagnetic radiation.
                      """@en .
 
-narci:narci_0000064 owl:sameAs narci:laser_excitation_device .
+narci:narci_0000066 owl:sameAs narci:laser_excitation_device .
 narci:laser owl:sameAs narci:laser_excitation_device .
 narci:laser_spec owl:sameAs narci:laser_excitation_device .
 
@@ -1117,7 +1123,7 @@ narci:laser_power a rdfs:Property;
                      Measurement of power or pulse energy.
                      """@en .
 
-narci:narci_0000065 owl:sameAs narci:laser_power .
+narci:narci_0000067 owl:sameAs narci:laser_power .
 
      
 # 
@@ -1142,7 +1148,7 @@ narci:visual_stimuli a rdfs:Property;
                      An external light sources able to emit modulated light, 
                      that generates neuronal response.
                      """@en .
-narci:narci_0000066 owl:sameAs narci:visual_stimuli .
+narci:narci_0000068 owl:sameAs narci:visual_stimuli .
 
 #
 # narci:VisualStimulusPresentation,prov:Entity
@@ -1167,7 +1173,7 @@ narci:perception a rdfs:Property;
                      sensory system.
                      """@en .
 
-narci:narci_0000067 owl:sameAs narci:perception .
+narci:narci_0000069 owl:sameAs narci:perception .
 
 narci:stimulus a rdfs:Property;
      rdfs:isDefinedBy <http://www.purl.org/narci/v0.3dev/schema#> ;
@@ -1184,7 +1190,7 @@ narci:stimulus a rdfs:Property;
                      internal or external environment.
                      """@en .
 
-narci:narci_0000068 owl:sameAs narci:stimulus .
+narci:narci_0000070 owl:sameAs narci:stimulus .
 narci:stim_protocol owl:sameAs narci:stimulus .
 
 #
@@ -1204,7 +1210,7 @@ narci:image_microscopy_voxel_size a rdfs:Property;
                      The volume element, defined in 3D space.
                      """@en .
 
-narci:narci_0000069 owl:sameAs narci:image_microscopy .
+narci:narci_0000071 owl:sameAs narci:image_microscopy_voxel_size .
 narci:voxel_size owl:sameAs narci:image_microscopy_voxel_size .
 
 narci:ca_image_count a rdfs:Property;
@@ -1223,7 +1229,7 @@ narci:ca_image_count a rdfs:Property;
                      the stimulated emission of electromagnetic radiation.
                      """@en .
 
-narci:narci_0000070 owl:sameAs narci:ca_image_count .
+narci:narci_0000072 owl:sameAs narci:ca_image_count .
 
 narci:ca_image_resolution a rdfs:Property;
      rdfs:isDefinedBy <http://www.purl.org/narci/v0.3dev/schema#>;
@@ -1240,7 +1246,7 @@ narci:ca_image_resolution a rdfs:Property;
                      Acquired image resolution (Width x Height).
                      """@en .
 
-narci:narci_0000071 owl:sameAs narci:ca_image_resolution .
+narci:narci_0000073 owl:sameAs narci:ca_image_resolution .
 
 narci:ca_image_cortical_z_stacks a rdfs:Property;
      rdfs:isDefinedBy <http://www.purl.org/narci/v0.3dev/schema#>;
@@ -1256,7 +1262,7 @@ narci:ca_image_cortical_z_stacks a rdfs:Property;
                      The number of set of images acquired along cortical depth simultaneously.
                      """@en .
 
-narci:narci_0000072 owl:sameAs narci:ca_image_cortical_z_stacks .
+narci:narci_0000074 owl:sameAs narci:ca_image_cortical_z_stacks .
 
 #
 # narci:RegionOfInterest,prov:Entity
@@ -1276,7 +1282,7 @@ narci:visual_cortex a rdfs:Property;
                      that generates neuronal response.
                      """@en .
 
-narci:narci_0000073 owl:sameAs narci:visual_cortex .
+narci:narci_0000075 owl:sameAs narci:visual_cortex .
 
 #
 # narci:RegionClassification,prov:Activity
@@ -1297,7 +1303,7 @@ narci:ca_target_cell_count a rdfs:Property;
                      Such as Neuron, PV for entire experiment.
                      """@en .
 
-narci:narci_0000073 owl:sameAs narci:visual_cortex .
+narci:narci_0000076 owl:sameAs narci:ca_target_cell_count .
 
 #
 # narci:CellFromRegionOfInterest,prov:Activity
@@ -1318,7 +1324,7 @@ narci:sensory_neurons a rdfs:Property;
                      receptors, into action potentials or graded potentials.
                      """@en .
 
-narci:narci_0000074 owl:sameAs narci:sensory_neurons .
+narci:narci_0000077 owl:sameAs narci:sensory_neurons .
 
 narci:neuronal_calcium_sensors a rdfs:Property;
      rdfs:isDefinedBy <http://www.purl.org/narci/v0.3dev/schema#>;
@@ -1365,7 +1371,7 @@ narci:neuronal_calcium_sensors a rdfs:Property;
                      """@en .
 
 
-narci:narci_0000074 owl:sameAs narci:neuronal_calcium_sensors .
+narci:narci_0000078 owl:sameAs narci:neuronal_calcium_sensors .
 narci:fluorescent_calcium_indicator owl:sameAs narci:neuronal_calcium_sensors .
 narci:fluorescent_calcium_sensors owl:sameAs narci:neuronal_calcium_sensors .
 narci:calcium_sensor_proteins owl:sameAs narci:neuronal_calcium_sensors .
@@ -1387,7 +1393,7 @@ narci:ca_target_cell_types_all a rdfs:Property;
                      A list of strings.
                      """@en .
 
-narci:narci_0000075 owl:sameAs narci:ca_target_cell_types_all .
+narci:narci_0000079 owl:sameAs narci:ca_target_cell_types_all .
 
 narci:ca_target_cell_id a rdfs:Property;
      rdfs:isDefinedBy <http://www.purl.org/narci/v0.3dev/schema#>;
@@ -1403,7 +1409,7 @@ narci:ca_target_cell_id a rdfs:Property;
                      The cell identification that is imaged for calcium dynamics (traced).
                      """@en .
 
-narci:narci_0000076 owl:sameAs narci:ca_target_cell_id .
+narci:narci_0000080 owl:sameAs narci:ca_target_cell_id .
 
 narci:ca_target_cell_x a rdfs:Property;
      rdfs:isDefinedBy <http://www.purl.org/narci/v0.3dev/schema#>;
@@ -1420,7 +1426,7 @@ narci:ca_target_cell_x a rdfs:Property;
                      that is imaged for calcium dynamics (traced).
                      """@en .
 
-narci:narci_0000077 owl:sameAs narci:ca_target_cell_x .
+narci:narci_0000081 owl:sameAs narci:ca_target_cell_x .
 
 narci:ca_target_cell_y a rdfs:Property;
      rdfs:isDefinedBy <http://www.purl.org/narci/v0.3dev/schema#>;
@@ -1437,7 +1443,7 @@ narci:ca_target_cell_y a rdfs:Property;
                      that is imaged for calcium dynamics (traced).
                      """@en .
 
-narci:narci_0000078 owl:sameAs narci:ca_target_cell_y .
+narci:narci_0000082 owl:sameAs narci:ca_target_cell_y .
 
 narci:ca_target_cell_size a rdfs:Property;
      rdfs:isDefinedBy <http://www.purl.org/narci/v0.3dev/schema#>;
@@ -1454,7 +1460,7 @@ narci:ca_target_cell_size a rdfs:Property;
                      dynamics (traced).
                      """@en .
 
-narci:narci_0000079 owl:sameAs narci:ca_target_cell_size .
+narci:narci_0000083 owl:sameAs narci:ca_target_cell_size .
 
 narci:ca_target_cell_type a rdfs:Property;
      rdfs:isDefinedBy <http://www.purl.org/narci/v0.3dev/schema#>;
@@ -1472,7 +1478,7 @@ narci:ca_target_cell_type a rdfs:Property;
                      name specifically.
                      """@en .
 
-narci:narci_0000080 owl:sameAs narci:ca_target_type .
+narci:narci_0000084 owl:sameAs narci:ca_target_type .
 
 #
 # narci:TimeSeriesExtract,prov:Activity
@@ -1496,4 +1502,4 @@ narci:ca_target_cell_raw_trajectory a rdfs:Property;
                      imaged for calcium dynamics (traced).
                      """@en .
 
-narci:narci_0000081 owl:sameAs narci:ca_target_cell_raw_trajectory .
+narci:narci_0000085 owl:sameAs narci:ca_target_cell_raw_trajectory .
